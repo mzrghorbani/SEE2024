@@ -1,0 +1,11 @@
+package core;
+
+import skf.core.SEEAbstractFederateAmbassador;;
+
+public class CommHubFederateAmbassador extends SEEAbstractFederateAmbassador {
+	
+	public CommHubFederateAmbassador(){
+		super();
+	}
+
+}

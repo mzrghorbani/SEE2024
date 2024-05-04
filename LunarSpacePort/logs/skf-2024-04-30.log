@@ -1,0 +1,316 @@
+2024-04-30 22:55:57.390 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-30 22:55:57.402 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-30 22:55:57.528 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-30 22:55:57.589 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-30 23:36:15.220 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-30 23:36:15.238 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-30 23:36:15.475 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-30 23:36:15.548 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-30 23:36:16.088 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-30 23:36:16.089 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:36:16.090 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:36:16.090 [main] INFO  skf.core.SEEHLAModule - Join the federate ' BSF LunarRover ' into the Federation execution ' SEE 2024 '.
+2024-04-30 23:36:16.408 [prti1516e: LRC[0x1d2bd371] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-30 23:36:16.413 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-30 23:36:16.414 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-30 23:36:16.430 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-30 23:36:16.444 [prti1516e: LRC[0x1d2bd371] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<103>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-30 23:36:16.467 [prti1516e: LRC[0x1d2bd371] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field root_frame_name, value: SolarSystemBarycentricInertial ]
+2024-04-30 23:36:16.469 [prti1516e: LRC[0x1d2bd371] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field scenario_time_epoch, value: 17131.83333333334 ]
+2024-04-30 23:36:16.469 [prti1516e: LRC[0x1d2bd371] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_scenario_time, value: null ]
+2024-04-30 23:36:16.469 [prti1516e: LRC[0x1d2bd371] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_cte_time, value: null ]
+2024-04-30 23:36:16.470 [prti1516e: LRC[0x1d2bd371] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field current_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:36:16.470 [prti1516e: LRC[0x1d2bd371] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:36:16.470 [prti1516e: LRC[0x1d2bd371] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field least_common_time_step, value: 1000000 ]
+2024-04-30 23:36:16.479 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-30 23:36:55.526 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-30 23:36:55.542 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-30 23:36:55.756 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-30 23:36:55.825 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-30 23:36:56.359 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-30 23:36:56.361 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:36:56.361 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:36:56.361 [main] INFO  skf.core.SEEHLAModule - Join the federate ' BSF LunarRover ' into the Federation execution ' SEE 2024 '.
+2024-04-30 23:36:56.582 [prti1516e: LRC[0x34f7234e] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-30 23:36:56.587 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-30 23:36:56.587 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-30 23:36:56.602 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-30 23:36:56.610 [prti1516e: LRC[0x34f7234e] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<103>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-30 23:36:56.632 [prti1516e: LRC[0x34f7234e] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field root_frame_name, value: SolarSystemBarycentricInertial ]
+2024-04-30 23:36:56.633 [prti1516e: LRC[0x34f7234e] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field scenario_time_epoch, value: 17131.83333333334 ]
+2024-04-30 23:36:56.633 [prti1516e: LRC[0x34f7234e] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_scenario_time, value: null ]
+2024-04-30 23:36:56.633 [prti1516e: LRC[0x34f7234e] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_cte_time, value: null ]
+2024-04-30 23:36:56.634 [prti1516e: LRC[0x34f7234e] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field current_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:36:56.634 [prti1516e: LRC[0x34f7234e] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:36:56.635 [prti1516e: LRC[0x34f7234e] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field least_common_time_step, value: 1000000 ]
+2024-04-30 23:36:56.645 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-30 23:38:30.725 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-30 23:38:30.742 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-30 23:38:30.948 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-30 23:38:31.030 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-30 23:38:31.531 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-30 23:38:31.533 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:38:31.533 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:38:31.533 [main] INFO  skf.core.SEEHLAModule - Join the federate ' BSF LunarRover ' into the Federation execution ' SEE 2024 '.
+2024-04-30 23:38:31.766 [prti1516e: LRC[0x49872d67] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-30 23:38:31.770 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-30 23:38:31.771 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-30 23:38:31.787 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-30 23:38:31.795 [prti1516e: LRC[0x49872d67] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<103>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-30 23:38:31.819 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field root_frame_name, value: SolarSystemBarycentricInertial ]
+2024-04-30 23:38:31.819 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field scenario_time_epoch, value: 17131.83333333334 ]
+2024-04-30 23:38:31.819 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_scenario_time, value: null ]
+2024-04-30 23:38:31.820 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_cte_time, value: null ]
+2024-04-30 23:38:31.820 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field current_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:38:31.821 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:38:31.821 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field least_common_time_step, value: 1000000 ]
+2024-04-30 23:38:31.833 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-30 23:43:33.975 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-30 23:43:34.001 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-30 23:43:34.289 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-30 23:43:34.385 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-30 23:43:34.998 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-30 23:43:34.999 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:43:35.000 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:43:35.000 [main] INFO  skf.core.SEEHLAModule - Join the federate ' BSF LunarRover ' into the Federation execution ' SEE 2024 '.
+2024-04-30 23:43:35.210 [prti1516e: LRC[0x08692d67] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-30 23:43:35.215 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-30 23:43:35.215 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-30 23:43:35.229 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-30 23:43:35.248 [prti1516e: LRC[0x08692d67] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<103>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-30 23:43:35.271 [prti1516e: LRC[0x08692d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field root_frame_name, value: SolarSystemBarycentricInertial ]
+2024-04-30 23:43:35.271 [prti1516e: LRC[0x08692d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field scenario_time_epoch, value: 17131.83333333334 ]
+2024-04-30 23:43:35.272 [prti1516e: LRC[0x08692d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_scenario_time, value: null ]
+2024-04-30 23:43:35.272 [prti1516e: LRC[0x08692d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_cte_time, value: null ]
+2024-04-30 23:43:35.272 [prti1516e: LRC[0x08692d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field current_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:43:35.273 [prti1516e: LRC[0x08692d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:43:35.273 [prti1516e: LRC[0x08692d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field least_common_time_step, value: 1000000 ]
+2024-04-30 23:43:35.284 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-30 23:44:18.178 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-30 23:44:18.199 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-30 23:44:18.443 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-30 23:44:18.515 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-30 23:44:19.015 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-30 23:44:19.015 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:44:19.015 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:44:19.017 [main] INFO  skf.core.SEEHLAModule - Join the federate ' BSF LunarRover ' into the Federation execution ' SEE 2024 '.
+2024-04-30 23:44:19.249 [prti1516e: LRC[0x49872d67] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-30 23:44:19.254 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-30 23:44:19.254 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-30 23:44:19.271 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-30 23:44:19.278 [prti1516e: LRC[0x49872d67] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<103>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-30 23:44:19.301 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field root_frame_name, value: SolarSystemBarycentricInertial ]
+2024-04-30 23:44:19.302 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field scenario_time_epoch, value: 17131.83333333334 ]
+2024-04-30 23:44:19.302 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_scenario_time, value: null ]
+2024-04-30 23:44:19.302 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_cte_time, value: null ]
+2024-04-30 23:44:19.302 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field current_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:44:19.303 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:44:19.303 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field least_common_time_step, value: 1000000 ]
+2024-04-30 23:44:19.315 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-30 23:50:31.162 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-30 23:50:31.173 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-30 23:50:31.303 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-30 23:50:31.351 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-30 23:50:31.757 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-30 23:50:31.757 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:50:31.758 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:50:31.758 [main] INFO  skf.core.SEEHLAModule - Join the federate ' BSF LunarRover ' into the Federation execution ' SEE 2024 '.
+2024-04-30 23:50:31.934 [prti1516e: LRC[0x49872d67] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-30 23:50:31.937 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-30 23:50:31.937 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-30 23:50:31.947 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-30 23:50:31.957 [prti1516e: LRC[0x49872d67] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<103>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-30 23:50:31.977 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field root_frame_name, value: SolarSystemBarycentricInertial ]
+2024-04-30 23:50:31.978 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field scenario_time_epoch, value: 17131.83333333334 ]
+2024-04-30 23:50:31.978 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_scenario_time, value: null ]
+2024-04-30 23:50:31.978 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_cte_time, value: null ]
+2024-04-30 23:50:31.978 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field current_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:50:31.978 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:50:31.978 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field least_common_time_step, value: 1000000 ]
+2024-04-30 23:50:31.991 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-30 23:51:41.122 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-30 23:51:41.136 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-30 23:51:41.290 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-30 23:51:41.341 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-30 23:51:41.695 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-30 23:51:41.696 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:51:41.696 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_datatypes.xml file.
+2024-04-30 23:51:41.696 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_entity.xml file.
+2024-04-30 23:51:41.696 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_environment.xml file.
+2024-04-30 23:51:41.696 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_management.xml file.
+2024-04-30 23:51:41.696 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_switches.xml file.
+2024-04-30 23:51:41.697 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:51:41.697 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_datatypes.xml file.
+2024-04-30 23:51:41.697 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_entity.xml file.
+2024-04-30 23:51:41.697 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_environment.xml file.
+2024-04-30 23:51:41.697 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_management.xml file.
+2024-04-30 23:51:41.697 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_switches.xml file.
+2024-04-30 23:51:41.697 [main] INFO  skf.core.SEEHLAModule - Join the federate ' BSF LunarRover ' into the Federation execution ' SEE 2024 '.
+2024-04-30 23:51:41.916 [prti1516e: LRC[0x49872d67] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-30 23:51:41.919 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-30 23:51:41.919 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-30 23:51:41.929 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-30 23:51:41.946 [prti1516e: LRC[0x49872d67] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<103>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-30 23:51:41.968 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field root_frame_name, value: SolarSystemBarycentricInertial ]
+2024-04-30 23:51:41.968 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field scenario_time_epoch, value: 17131.83333333334 ]
+2024-04-30 23:51:41.968 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_scenario_time, value: null ]
+2024-04-30 23:51:41.968 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_cte_time, value: null ]
+2024-04-30 23:51:41.969 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field current_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:51:41.969 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:51:41.969 [prti1516e: LRC[0x49872d67] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field least_common_time_step, value: 1000000 ]
+2024-04-30 23:51:41.983 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-30 23:54:14.951 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-30 23:54:14.964 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-30 23:54:15.110 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-30 23:54:15.155 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-30 23:54:15.523 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-30 23:54:15.524 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:54:15.524 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_datatypes.xml file.
+2024-04-30 23:54:15.524 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_entity.xml file.
+2024-04-30 23:54:15.524 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_environment.xml file.
+2024-04-30 23:54:15.524 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_management.xml file.
+2024-04-30 23:54:15.524 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_switches.xml file.
+2024-04-30 23:54:15.524 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:54:15.525 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_datatypes.xml file.
+2024-04-30 23:54:15.525 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_entity.xml file.
+2024-04-30 23:54:15.525 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_environment.xml file.
+2024-04-30 23:54:15.525 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_management.xml file.
+2024-04-30 23:54:15.525 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_switches.xml file.
+2024-04-30 23:54:15.525 [main] INFO  skf.core.SEEHLAModule - Join the federate ' BSF LunarRover ' into the Federation execution ' SEE 2024 '.
+2024-04-30 23:54:15.714 [prti1516e: LRC[0x180da663] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-30 23:54:15.716 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-30 23:54:15.717 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-30 23:54:15.727 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-30 23:54:15.745 [prti1516e: LRC[0x180da663] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<103>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-30 23:54:15.767 [prti1516e: LRC[0x180da663] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field root_frame_name, value: SolarSystemBarycentricInertial ]
+2024-04-30 23:54:15.767 [prti1516e: LRC[0x180da663] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field scenario_time_epoch, value: 17131.83333333334 ]
+2024-04-30 23:54:15.767 [prti1516e: LRC[0x180da663] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_scenario_time, value: null ]
+2024-04-30 23:54:15.767 [prti1516e: LRC[0x180da663] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_cte_time, value: null ]
+2024-04-30 23:54:15.767 [prti1516e: LRC[0x180da663] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field current_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:54:15.768 [prti1516e: LRC[0x180da663] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:54:15.768 [prti1516e: LRC[0x180da663] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field least_common_time_step, value: 1000000 ]
+2024-04-30 23:54:15.781 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-30 23:54:41.066 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-30 23:54:41.081 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-30 23:54:41.218 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-30 23:54:41.263 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-30 23:54:41.612 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-30 23:54:41.613 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:54:41.613 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_datatypes.xml file.
+2024-04-30 23:54:41.613 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_entity.xml file.
+2024-04-30 23:54:41.613 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_environment.xml file.
+2024-04-30 23:54:41.613 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_management.xml file.
+2024-04-30 23:54:41.614 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_switches.xml file.
+2024-04-30 23:54:41.614 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:54:41.614 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_datatypes.xml file.
+2024-04-30 23:54:41.614 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_entity.xml file.
+2024-04-30 23:54:41.614 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_environment.xml file.
+2024-04-30 23:54:41.614 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_management.xml file.
+2024-04-30 23:54:41.614 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_switches.xml file.
+2024-04-30 23:54:41.615 [main] INFO  skf.core.SEEHLAModule - Join the federate ' BSF LunarRover ' into the Federation execution ' SEE 2024 '.
+2024-04-30 23:54:41.760 [prti1516e: LRC[0x1d2bd371] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-30 23:54:41.762 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-30 23:54:41.762 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-30 23:54:41.774 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-30 23:54:41.785 [prti1516e: LRC[0x1d2bd371] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<103>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-30 23:54:41.806 [prti1516e: LRC[0x1d2bd371] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field root_frame_name, value: SolarSystemBarycentricInertial ]
+2024-04-30 23:54:41.806 [prti1516e: LRC[0x1d2bd371] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field scenario_time_epoch, value: 17131.83333333334 ]
+2024-04-30 23:54:41.807 [prti1516e: LRC[0x1d2bd371] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_scenario_time, value: null ]
+2024-04-30 23:54:41.807 [prti1516e: LRC[0x1d2bd371] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_cte_time, value: null ]
+2024-04-30 23:54:41.807 [prti1516e: LRC[0x1d2bd371] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field current_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:54:41.807 [prti1516e: LRC[0x1d2bd371] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:54:41.807 [prti1516e: LRC[0x1d2bd371] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field least_common_time_step, value: 1000000 ]
+2024-04-30 23:54:41.819 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-30 23:55:42.423 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-30 23:55:42.435 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-30 23:55:42.573 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-30 23:55:42.622 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-30 23:55:42.968 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-30 23:55:42.970 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:55:42.970 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_datatypes.xml file.
+2024-04-30 23:55:42.970 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_entity.xml file.
+2024-04-30 23:55:42.970 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_environment.xml file.
+2024-04-30 23:55:42.970 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_management.xml file.
+2024-04-30 23:55:42.970 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_switches.xml file.
+2024-04-30 23:55:42.970 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:55:42.970 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_datatypes.xml file.
+2024-04-30 23:55:42.970 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_entity.xml file.
+2024-04-30 23:55:42.970 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_environment.xml file.
+2024-04-30 23:55:42.970 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_management.xml file.
+2024-04-30 23:55:42.970 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_switches.xml file.
+2024-04-30 23:55:42.971 [main] INFO  skf.core.SEEHLAModule - Join the federate ' BSF LunarRover ' into the Federation execution ' SEE 2024 '.
+2024-04-30 23:55:43.172 [prti1516e: LRC[0x44e3a2b2] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-30 23:55:43.175 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-30 23:55:43.175 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-30 23:55:43.190 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-30 23:55:43.198 [prti1516e: LRC[0x44e3a2b2] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<103>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-30 23:55:43.221 [prti1516e: LRC[0x44e3a2b2] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field root_frame_name, value: SolarSystemBarycentricInertial ]
+2024-04-30 23:55:43.221 [prti1516e: LRC[0x44e3a2b2] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field scenario_time_epoch, value: 17131.83333333334 ]
+2024-04-30 23:55:43.222 [prti1516e: LRC[0x44e3a2b2] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_scenario_time, value: null ]
+2024-04-30 23:55:43.222 [prti1516e: LRC[0x44e3a2b2] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_cte_time, value: null ]
+2024-04-30 23:55:43.222 [prti1516e: LRC[0x44e3a2b2] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field current_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:55:43.222 [prti1516e: LRC[0x44e3a2b2] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:55:43.222 [prti1516e: LRC[0x44e3a2b2] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field least_common_time_step, value: 1000000 ]
+2024-04-30 23:55:43.235 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-30 23:56:33.949 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-30 23:56:33.962 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-30 23:56:34.098 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-30 23:56:34.142 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-30 23:56:34.489 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-30 23:56:34.489 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:56:34.489 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_datatypes.xml file.
+2024-04-30 23:56:34.490 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_entity.xml file.
+2024-04-30 23:56:34.490 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_environment.xml file.
+2024-04-30 23:56:34.490 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_management.xml file.
+2024-04-30 23:56:34.490 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_switches.xml file.
+2024-04-30 23:56:34.490 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:56:34.490 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_datatypes.xml file.
+2024-04-30 23:56:34.490 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_entity.xml file.
+2024-04-30 23:56:34.490 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_environment.xml file.
+2024-04-30 23:56:34.490 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_management.xml file.
+2024-04-30 23:56:34.491 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_switches.xml file.
+2024-04-30 23:56:34.491 [main] INFO  skf.core.SEEHLAModule - Join the federate ' BSF LunarRover ' into the Federation execution ' SEE 2024 '.
+2024-04-30 23:56:34.698 [prti1516e: LRC[0x180da663] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-30 23:56:34.701 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-30 23:56:34.701 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-30 23:56:34.712 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-30 23:56:34.722 [prti1516e: LRC[0x180da663] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<103>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-30 23:56:34.742 [prti1516e: LRC[0x180da663] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field root_frame_name, value: SolarSystemBarycentricInertial ]
+2024-04-30 23:56:34.742 [prti1516e: LRC[0x180da663] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field scenario_time_epoch, value: 17131.83333333334 ]
+2024-04-30 23:56:34.743 [prti1516e: LRC[0x180da663] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_scenario_time, value: null ]
+2024-04-30 23:56:34.743 [prti1516e: LRC[0x180da663] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_cte_time, value: null ]
+2024-04-30 23:56:34.743 [prti1516e: LRC[0x180da663] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field current_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:56:34.743 [prti1516e: LRC[0x180da663] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:56:34.743 [prti1516e: LRC[0x180da663] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field least_common_time_step, value: 1000000 ]
+2024-04-30 23:56:34.757 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-30 23:58:25.869 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-30 23:58:25.884 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-30 23:58:26.045 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-30 23:58:26.093 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-30 23:58:26.463 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-30 23:58:26.464 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:58:26.464 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_datatypes.xml file.
+2024-04-30 23:58:26.464 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_entity.xml file.
+2024-04-30 23:58:26.464 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_environment.xml file.
+2024-04-30 23:58:26.464 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_management.xml file.
+2024-04-30 23:58:26.464 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_switches.xml file.
+2024-04-30 23:58:26.464 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\LunarRover.xml file.
+2024-04-30 23:58:26.464 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_datatypes.xml file.
+2024-04-30 23:58:26.464 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_entity.xml file.
+2024-04-30 23:58:26.464 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_environment.xml file.
+2024-04-30 23:58:26.464 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_management.xml file.
+2024-04-30 23:58:26.464 [main] DEBUG skf.core.SEEHLAModule - Loading the foms\SISO_SpaceFOM_switches.xml file.
+2024-04-30 23:58:26.465 [main] INFO  skf.core.SEEHLAModule - Join the federate ' BSF LunarRover ' into the Federation execution ' SEE 2024 '.
+2024-04-30 23:58:26.642 [prti1516e: LRC[0x42f8285e] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-30 23:58:26.645 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-30 23:58:26.646 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-30 23:58:26.658 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-30 23:58:26.669 [prti1516e: LRC[0x42f8285e] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<103>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-30 23:58:26.691 [prti1516e: LRC[0x42f8285e] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field root_frame_name, value: SolarSystemBarycentricInertial ]
+2024-04-30 23:58:26.691 [prti1516e: LRC[0x42f8285e] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field scenario_time_epoch, value: 17131.83333333334 ]
+2024-04-30 23:58:26.692 [prti1516e: LRC[0x42f8285e] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_scenario_time, value: null ]
+2024-04-30 23:58:26.692 [prti1516e: LRC[0x42f8285e] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_mode_cte_time, value: null ]
+2024-04-30 23:58:26.692 [prti1516e: LRC[0x42f8285e] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field current_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:58:26.692 [prti1516e: LRC[0x42f8285e] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field next_execution_mode, value: EXEC_MODE_RUNNING ]
+2024-04-30 23:58:26.692 [prti1516e: LRC[0x42f8285e] Federate service] DEBUG skf.model.object.ObjectClassModelParser - Attribute decoded [ Field least_common_time_step, value: 1000000 ]
+2024-04-30 23:58:26.706 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.

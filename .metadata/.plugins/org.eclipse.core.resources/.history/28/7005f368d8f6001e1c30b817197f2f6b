@@ -1,0 +1,43 @@
+
+import hla.rti1516e.*;
+
+public abstract class AbstractFederateAmbassador implements FederateAmbassador {
+    // Provide default implementations for all methods
+	
+    @Override
+    public void receiveInteraction(InteractionClassHandle interactionClass,
+                                   ParameterHandleValueMap theParameters,
+                                   byte[] userSuppliedTag,
+                                   OrderType sentOrdering,
+                                   TransportationTypeHandle transportation,
+                                   FederateAmbassador.SupplementalReceiveInfo info) {
+        // Default implementation
+    }
+
+    // Implement default methods for other callback methods as needed
+}
+
+public class TestFederate {
+    // Your TestFederate code here
+    
+    // Extend the abstract class instead of implementing the interface directly
+    private class MyFederateAmbassador extends AbstractFederateAmbassador {
+        // Override only the methods you need
+        @Override
+        public void receiveInteraction(InteractionClassHandle interactionClass,
+                                       ParameterHandleValueMap theParameters,
+                                       byte[] userSuppliedTag,
+                                       OrderType sentOrdering,
+                                       TransportationTypeHandle transportation,
+                                       LogicalTime theTime,
+                                       EventRetractionHandle retractionHandle) {
+            // Implement your receiveInteraction method
+        }
+
+        @Override
+        public void objectInstanceNameReservationSucceeded(String name) throws FederateInternalError {
+            // Implement your objectInstanceNameReservationSucceeded method
+        }
+    }
+}
+

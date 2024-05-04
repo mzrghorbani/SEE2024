@@ -1,0 +1,15 @@
+2024-04-23 19:11:32.218 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-23 19:11:32.242 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-23 19:11:32.392 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-23 19:11:32.459 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-23 19:14:49.601 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-23 19:14:49.624 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-23 19:14:49.762 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-23 19:14:49.809 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-23 19:14:50.621 [main] ERROR skf.core.SEEAbstractFederate - Windows Firewall is enabled. Please disable it before you ran your SEEFederate.
+2024-04-23 19:15:23.626 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-23 19:15:23.638 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-23 19:15:23.764 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-23 19:15:23.817 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-23 19:15:24.545 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-23 19:15:24.546 [main] INFO  skf.core.SEEHLAModule - Join the federate ' CommunicationHub ' into the Federation execution ' PitchDemo '.

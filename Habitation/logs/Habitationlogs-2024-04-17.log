@@ -1,0 +1,6 @@
+2024-04-17 15:23:05.454 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-17 15:23:05.491 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-17 15:23:05.646 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-17 15:23:05.708 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-17 15:23:06.511 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-17 15:23:06.512 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Habitation ' into the Federation execution ' SEE 2024 '.

@@ -1,0 +1,18 @@
+2024-04-01 21:35:05.481 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-01 21:35:05.621 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-01 21:35:05.809 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-01 21:35:05.853 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-01 21:35:06.202 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-01 21:35:06.204 [main] INFO  skf.core.SEEHLAModule - Join the federate ' SpaceReferenceFramePublisher ' into the Federation execution ' SEE 2024 '.
+2024-04-01 21:35:06.372 [prti1516e: LRC[0x781f10f2] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-01 21:35:06.375 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-01 21:35:06.375 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-01 21:36:48.919 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-01 21:36:49.056 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-01 21:36:49.255 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-01 21:36:49.306 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-01 21:36:49.716 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-01 21:36:49.717 [main] INFO  skf.core.SEEHLAModule - Join the federate ' SpaceReferenceFramePublisher ' into the Federation execution ' SEE 2024 '.
+2024-04-01 21:36:49.925 [prti1516e: LRC[0x6c5945a7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-01 21:36:49.929 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-01 21:36:49.929 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject

@@ -1,0 +1,301 @@
+package core;
+
+import hla.rti1516_202X.AttributeHandle;
+import hla.rti1516_202X.AttributeHandleSet;
+import hla.rti1516_202X.AttributeHandleValueMap;
+import hla.rti1516_202X.CallbackModel;
+import hla.rti1516_202X.FederateAmbassador;
+import hla.rti1516_202X.FederateHandle;
+import hla.rti1516_202X.InteractionClassHandle;
+import hla.rti1516_202X.ObjectClassHandle;
+import hla.rti1516_202X.ObjectInstanceHandle;
+import hla.rti1516_202X.OrderType;
+import hla.rti1516_202X.ParameterHandle;
+import hla.rti1516_202X.ParameterHandleValueMap;
+import hla.rti1516_202X.RTIambassador;
+import hla.rti1516_202X.ResignAction;
+import hla.rti1516_202X.RtiConfiguration;
+import hla.rti1516_202X.TransportationTypeHandle;
+import hla.rti1516_202X.encoding.DecoderException;
+import hla.rti1516_202X.encoding.EncoderException;
+import hla.rti1516_202X.encoding.EncoderFactory;
+import hla.rti1516_202X.encoding.HLAunicodeString;
+import hla.rti1516_202X.exceptions.AlreadyConnected;
+import hla.rti1516_202X.exceptions.CouldNotOpenFOM;
+import hla.rti1516_202X.exceptions.ErrorReadingFOM;
+import hla.rti1516_202X.exceptions.FederateAlreadyExecutionMember;
+import hla.rti1516_202X.exceptions.FederateIsExecutionMember;
+import hla.rti1516_202X.exceptions.FederateOwnsAttributes;
+import hla.rti1516_202X.exceptions.FederateServiceInvocationsAreBeingReportedViaMOM;
+import hla.rti1516_202X.exceptions.FederatesCurrentlyJoined;
+import hla.rti1516_202X.exceptions.InconsistentFOM;
+import hla.rti1516_202X.exceptions.InvalidFOM;
+import hla.rti1516_202X.exceptions.InvalidResignAction;
+import hla.rti1516_202X.exceptions.OwnershipAcquisitionPending;
+import hla.rti1516_202X.exceptions.RTIexception;
+import hla.rti1516_202X.exceptions.Unauthorized;
+import hla.rti1516e.exceptions.AttributeNotDefined;
+import hla.rti1516e.exceptions.AttributeNotOwned;
+import hla.rti1516e.exceptions.CallNotAllowedFromWithinCallback;
+import hla.rti1516e.exceptions.ConnectionFailed;
+import hla.rti1516e.exceptions.CouldNotCreateLogicalTimeFactory;
+import hla.rti1516e.exceptions.CouldNotOpenFDD;
+import hla.rti1516e.exceptions.ErrorReadingFDD;
+import hla.rti1516e.exceptions.FederateNotExecutionMember;
+import hla.rti1516e.exceptions.FederationExecutionDoesNotExist;
+import hla.rti1516e.exceptions.IllegalName;
+import hla.rti1516e.exceptions.InconsistentFDD;
+import hla.rti1516e.exceptions.InteractionClassNotDefined;
+import hla.rti1516e.exceptions.InteractionClassNotPublished;
+import hla.rti1516e.exceptions.InteractionParameterNotDefined;
+import hla.rti1516e.exceptions.InvalidInteractionClassHandle;
+import hla.rti1516e.exceptions.InvalidLocalSettingsDesignator;
+import hla.rti1516e.exceptions.InvalidObjectClassHandle;
+import hla.rti1516e.exceptions.NameNotFound;
+import hla.rti1516e.exceptions.NotConnected;
+import hla.rti1516e.exceptions.ObjectClassNotDefined;
+import hla.rti1516e.exceptions.ObjectClassNotPublished;
+import hla.rti1516e.exceptions.ObjectInstanceNameInUse;
+import hla.rti1516e.exceptions.ObjectInstanceNameNotReserved;
+import hla.rti1516e.exceptions.ObjectInstanceNotKnown;
+import hla.rti1516e.exceptions.RTIinternalError;
+import hla.rti1516e.exceptions.RestoreInProgress;
+import hla.rti1516e.exceptions.SaveInProgress;
+import hla.rti1516e.exceptions.SynchronizationPointLabelNotAnnounced;
+import hla.rti1516e.exceptions.UnsupportedCallbackModel;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Observable;
+import java.util.Observer;
+import java.util.TimeZone;
+
+import model.CommHub;
+import model.Position;
+import siso.smackdown.frame.FrameType;
+import skf.config.Configuration;
+import skf.core.SEEAbstractFederate;
+import skf.core.SEEAbstractFederateAmbassador;
+import skf.exception.PublishException;
+import skf.exception.SubscribeException;
+import skf.exception.UnsubscribeException;
+import skf.exception.UpdateException;
+import skf.model.interaction.modeTransitionRequest.ModeTransitionRequest;
+import skf.model.object.annotations.ObjectClass;
+import skf.model.object.executionConfiguration.ExecutionConfiguration;
+import skf.model.object.executionConfiguration.ExecutionMode;
+import skf.synchronizationPoint.SynchronizationPoint;
+import skf.utility.JulianDateType;
+
+public class CommHubFederate extends SEEAbstractFederate implements Observer {
+
+	private static final int MAX_WAIT_TIME = 10000;
+
+	private CommHub commHub = null;
+	private String local_settings_designator = null;
+
+	private ModeTransitionRequest mtr = null;
+
+	private SimpleDateFormat format = null;
+
+	public String federateName = "CommHub";
+	private final List<String> _args;
+	private final BufferedReader _systemInput;
+	private RTIambassador _rtiAmbassador;
+	private InteractionClassHandle _communicationClassHandle;
+	private ParameterHandle _messageParameterHandle;
+	private ParameterHandle _senderParameterHandle;
+	private ObjectInstanceHandle _userInstanceHandle;
+	private AttributeHandle _nameAttributeHandle;
+	private String _username;
+	private volatile boolean _reservationComplete;
+	private volatile boolean _reservationSucceeded;
+	private final Object _reservationSemaphore = new Object();
+	private EncoderFactory _encoderFactory;
+	private final Map<ObjectInstanceHandle, CommHub> _knownObjects = new HashMap();
+
+	public CommHubFederate(SEEAbstractFederateAmbassador seefedamb, CommHub commHub, String[] var1) {
+		super(seefedamb);
+		this.commHub = commHub;
+		this.mtr = new ModeTransitionRequest();
+		this.format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");
+		format.setTimeZone(TimeZone.getTimeZone("UTC"));
+		this._args = new ArrayList(List.of(var1));
+		this._systemInput = new BufferedReader(new InputStreamReader(System.in));
+	}
+
+	@SuppressWarnings("unchecked")
+	public void configureAndStart(Configuration config) throws ConnectionFailed, InvalidLocalSettingsDesignator,
+			UnsupportedCallbackModel, CallNotAllowedFromWithinCallback, RTIinternalError,
+			CouldNotCreateLogicalTimeFactory, FederationExecutionDoesNotExist, InconsistentFDD, ErrorReadingFDD,
+			CouldNotOpenFDD, SaveInProgress, RestoreInProgress, NotConnected, FederateNotExecutionMember, NameNotFound,
+			InvalidObjectClassHandle, AttributeNotDefined, ObjectClassNotDefined, InstantiationException,
+			IllegalAccessException, IllegalName, ObjectInstanceNameInUse, ObjectInstanceNameNotReserved,
+			ObjectClassNotPublished, AttributeNotOwned, ObjectInstanceNotKnown, PublishException, UpdateException,
+			SubscribeException, InvalidInteractionClassHandle, InteractionClassNotDefined, InteractionClassNotPublished,
+			InteractionParameterNotDefined, UnsubscribeException, InterruptedException,
+			SynchronizationPointLabelNotAnnounced, hla.rti1516_202X.exceptions.InteractionClassNotPublished,
+			hla.rti1516_202X.exceptions.InteractionParameterNotDefined,
+			hla.rti1516_202X.exceptions.InteractionClassNotDefined, hla.rti1516_202X.exceptions.SaveInProgress,
+			hla.rti1516_202X.exceptions.RestoreInProgress, hla.rti1516_202X.exceptions.FederateNotExecutionMember,
+			hla.rti1516_202X.exceptions.NotConnected, hla.rti1516_202X.exceptions.RTIinternalError,
+			hla.rti1516_202X.exceptions.NameNotFound, hla.rti1516_202X.exceptions.InvalidInteractionClassHandle,
+			FederateServiceInvocationsAreBeingReportedViaMOM, hla.rti1516_202X.exceptions.InvalidObjectClassHandle,
+			hla.rti1516_202X.exceptions.AttributeNotDefined, hla.rti1516_202X.exceptions.ObjectClassNotDefined,
+			hla.rti1516_202X.exceptions.AttributeNotOwned, hla.rti1516_202X.exceptions.ObjectInstanceNotKnown,
+			hla.rti1516_202X.exceptions.ObjectInstanceNameInUse,
+			hla.rti1516_202X.exceptions.ObjectInstanceNameNotReserved,
+			hla.rti1516_202X.exceptions.ObjectClassNotPublished, IOException, InvalidResignAction,
+			OwnershipAcquisitionPending, FederateOwnsAttributes,
+			hla.rti1516_202X.exceptions.CallNotAllowedFromWithinCallback,
+			hla.rti1516_202X.exceptions.FederationExecutionDoesNotExist, Unauthorized, 
+			FederateIsExecutionMember, hla.rti1516_202X.exceptions.ConnectionFailed, 
+			hla.rti1516_202X.exceptions.UnsupportedCallbackModel, AlreadyConnected, 
+			hla.rti1516_202X.exceptions.CouldNotCreateLogicalTimeFactory, 
+			FederateAlreadyExecutionMember {
+		// 1. configure the SKF framework
+		super.configure(config);
+
+		// 2. Connect on RTI
+		/*
+		 * For MAK local_settings_designator = ""; For PITCH local_settings_designator =
+		 * "crcHost=" + <crc_host> + "\ncrcPort=" + <crc_port>;
+		 */
+		local_settings_designator = "crcHost=" + config.getCrcHost() + "\ncrcPort=" + config.getCrcPort();
+		super.connectToRTI(local_settings_designator);
+
+		// 3. join the SEE Federation execution
+		super.joinFederationExecution();
+		
+		File var5 = new File("CommHub.xml");
+		
+		try {
+			this._rtiAmbassador.joinFederationExecution("CommHub", "COMMS", new URL[]{var5.toURI().toURL()});
+		} catch (hla.rti1516_202X.exceptions.CouldNotCreateLogicalTimeFactory
+				| hla.rti1516_202X.exceptions.FederationExecutionDoesNotExist | InconsistentFOM | InvalidFOM
+				| ErrorReadingFOM | CouldNotOpenFOM | hla.rti1516_202X.exceptions.SaveInProgress
+				| hla.rti1516_202X.exceptions.RestoreInProgress | FederateAlreadyExecutionMember | Unauthorized
+				| hla.rti1516_202X.exceptions.NotConnected
+				| hla.rti1516_202X.exceptions.CallNotAllowedFromWithinCallback
+				| hla.rti1516_202X.exceptions.RTIinternalError | MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		this._communicationClassHandle = this._rtiAmbassador.getInteractionClassHandle("Communication");
+		this._messageParameterHandle = this._rtiAmbassador.getParameterHandle(this._communicationClassHandle,
+				"Message");
+		this._senderParameterHandle = this._rtiAmbassador.getParameterHandle(this._communicationClassHandle, "Sender");
+		this._rtiAmbassador.subscribeInteractionClass(this._communicationClassHandle);
+		this._rtiAmbassador.publishInteractionClass(this._communicationClassHandle);
+
+		ObjectClassHandle var6 = this._rtiAmbassador.getObjectClassHandle("Participant");
+		this._nameAttributeHandle = this._rtiAmbassador.getAttributeHandle(var6, "Name");
+		AttributeHandleSet var7 = this._rtiAmbassador.getAttributeHandleSetFactory().create();
+		var7.add(this._nameAttributeHandle);
+		this._rtiAmbassador.subscribeObjectClassAttributes(var6, var7);
+		this._rtiAmbassador.publishObjectClassAttributes(var6, var7);
+
+		do {
+			this._username = this.federateName;
+			try {
+				this._reservationComplete = false;
+				this._rtiAmbassador.reserveObjectInstanceName(this._username);
+				synchronized (this._reservationSemaphore) {
+					while (!this._reservationComplete) {
+						try {
+							this._reservationSemaphore.wait();
+						} catch (InterruptedException var14) {
+						}
+					}
+				}
+
+				if (!this._reservationSucceeded) {
+					System.out.println("Federate already taken, try again.");
+				}
+			} catch (RTIexception var22) {
+				System.err.println("RTI exception when reserving name: " + var22.getMessage());
+				return;
+			}
+		} while (!this._reservationSucceeded);
+
+		this._userInstanceHandle = this._rtiAmbassador.registerObjectInstance(var6, this._username);
+		AttributeHandleValueMap var8 = this._rtiAmbassador.getAttributeHandleValueMapFactory().create(1);
+		HLAunicodeString var9 = this._encoderFactory.createHLAunicodeString(this._username);
+		var8.put(this._nameAttributeHandle, var9.toByteArray());
+		this._rtiAmbassador.updateAttributeValues(this._userInstanceHandle, var8, (byte[]) null);
+		System.out.println("Type messages you want to send. To exit, type . <ENTER>");
+
+		while (true) {
+			System.out.print("> ");
+			String var10 = this._systemInput.readLine();
+			if (var10.equals(".")) {
+				this._rtiAmbassador.resignFederationExecution(ResignAction.DELETE_OBJECTS_THEN_DIVEST);
+
+				try {
+					this._rtiAmbassador.destroyFederationExecution("COMMS");
+				} catch (FederatesCurrentlyJoined var13) {
+				}
+
+				this._rtiAmbassador.disconnect();
+				this._rtiAmbassador = null;
+				return;
+			}
+
+			ParameterHandleValueMap var11 = this._rtiAmbassador.getParameterHandleValueMapFactory().create(1);
+			HLAunicodeString var12 = this._encoderFactory.createHLAunicodeString();
+			var12.setValue(var10);
+			var11.put(this._messageParameterHandle, var12.toByteArray());
+			var11.put(this._senderParameterHandle, var9.toByteArray());
+			this._rtiAmbassador.sendInteraction(this._communicationClassHandle, var11, (byte[]) null);
+		}
+
+	}
+
+	@Override
+	protected void doAction() {
+
+		/* Time information related to the Federation */
+		System.out.println(format.format(this.getTime().getFederationTimeAsCalendar().getTime()));
+
+	}
+
+	@Override
+	public void update(Observable arg0, Object arg1) {
+
+		System.out.println("The CommHub has received an update");
+		if (arg1 instanceof ExecutionConfiguration) {
+			super.setExecutionConfiguration((ExecutionConfiguration) arg1);
+
+			/* Manage state transitions */
+			if (super.getExecutionConfiguration().getCurrent_execution_mode() == ExecutionMode.EXEC_MODE_RUNNING
+					&& super.getExecutionConfiguration().getNext_execution_mode() == ExecutionMode.EXEC_MODE_FREEZE) {
+				super.freezeExecution();
+			}
+
+			else if (super.getExecutionConfiguration().getCurrent_execution_mode() == ExecutionMode.EXEC_MODE_FREEZE
+					&& super.getExecutionConfiguration().getNext_execution_mode() == ExecutionMode.EXEC_MODE_RUNNING) {
+				super.resumeExecution();
+			}
+
+			else if ((super.getExecutionConfiguration().getCurrent_execution_mode() == ExecutionMode.EXEC_MODE_FREEZE
+					|| super.getExecutionConfiguration().getCurrent_execution_mode() == ExecutionMode.EXEC_MODE_RUNNING)
+					&& super.getExecutionConfiguration().getNext_execution_mode() == ExecutionMode.EXEC_MODE_SHUTDOWN) {
+				super.shudownExecution();
+			} else
+				System.out.println("ExecutionConfiguration status unknown");
+			/* End Manage state transitions */
+		} else
+			System.out.println("Type not known!");
+
+	}
+
+}

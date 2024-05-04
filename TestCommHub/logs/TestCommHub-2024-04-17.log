@@ -1,0 +1,486 @@
+2024-04-17 14:10:15.877 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-17 14:10:15.927 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-17 14:10:16.079 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-17 14:10:16.138 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-17 14:10:16.517 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-17 14:10:16.518 [main] INFO  skf.core.SEEHLAModule - Join the federate ' TestCommHub ' into the Federation execution ' SEE 2024 '.
+2024-04-17 14:10:16.737 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-17 14:10:16.737 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-17 23:10:54.630 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-17 23:10:54.652 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-17 23:10:54.783 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-17 23:10:54.829 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-17 23:10:55.189 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-17 23:10:55.190 [main] INFO  skf.core.SEEHLAModule - Join the federate ' TestCommHub ' into the Federation execution ' SEE 2024 '.
+2024-04-17 23:11:16.269 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-17 23:11:16.281 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-17 23:11:16.407 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-17 23:11:16.458 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-17 23:11:17.208 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-17 23:11:17.209 [main] INFO  skf.core.SEEHLAModule - Join the federate ' TestCommHub ' into the Federation execution ' SEE 2024 '.
+2024-04-17 23:11:18.128 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-17 23:11:18.129 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-17 23:11:18.240 [prti1516e: LRC[0x6ebf0f36] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-17 23:11:18.290 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-17 23:11:18.305 [prti1516e: LRC[0x6ebf0f36] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<2117>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-17 23:11:18.491 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-17 23:11:18.498 [main] INFO  skf.core.SEEHLAModule - The Object ' model.TestCommHub@7a26928a ' has been published.
+2024-04-17 23:11:18.498 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' AitkenBasinLocalFixed ' ReferenceFrame
+2024-04-17 23:11:18.509 [main] INFO  skf.core.SEEHLAModule - Set up time management.
+2024-04-17 23:11:18.510 [main] INFO  skf.core.SEEHLAModule - Time constrained enabled.
+2024-04-17 23:11:18.519 [prti1516e: LRC[0x6ebf0f36] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3127>, ObjectClassHandle: objectClass<8>, Name: MarsCentricFixed, FederateHandle: null
+2024-04-17 23:11:18.528 [prti1516e: LRC[0x6ebf0f36] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3123>, ObjectClassHandle: objectClass<8>, Name: MoonCentricInertial, FederateHandle: null
+2024-04-17 23:11:18.529 [prti1516e: LRC[0x6ebf0f36] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3118>, ObjectClassHandle: objectClass<8>, Name: SunCentricInertial, FederateHandle: null
+2024-04-17 23:11:18.529 [prti1516e: LRC[0x6ebf0f36] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3125>, ObjectClassHandle: objectClass<8>, Name: EarthMoonL2Rotating, FederateHandle: null
+2024-04-17 23:11:18.529 [prti1516e: LRC[0x6ebf0f36] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3120>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricRotating, FederateHandle: null
+2024-04-17 23:11:18.529 [prti1516e: LRC[0x6ebf0f36] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3122>, ObjectClassHandle: objectClass<8>, Name: EarthCentricFixed, FederateHandle: null
+2024-04-17 23:11:18.529 [prti1516e: LRC[0x6ebf0f36] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3129>, ObjectClassHandle: objectClass<8>, Name: SeeLunarSouthPoleBaseLocalFixed, FederateHandle: null
+2024-04-17 23:11:18.529 [prti1516e: LRC[0x6ebf0f36] Federate service] ERROR skf.core.SEEAbstractFederateAmbassador - Can't find the FrameType: SeeLunarSouthPoleBaseLocalFixed
+2024-04-17 23:11:18.529 [prti1516e: LRC[0x6ebf0f36] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3121>, ObjectClassHandle: objectClass<8>, Name: EarthCentricInertial, FederateHandle: null
+2024-04-17 23:11:18.529 [prti1516e: LRC[0x6ebf0f36] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3128>, ObjectClassHandle: objectClass<8>, Name: AitkenBasinLocalFixed, FederateHandle: null
+2024-04-17 23:11:18.530 [prti1516e: LRC[0x6ebf0f36] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3124>, ObjectClassHandle: objectClass<8>, Name: MoonCentricFixed, FederateHandle: null
+2024-04-17 23:11:18.530 [prti1516e: LRC[0x6ebf0f36] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3119>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricInertial, FederateHandle: null
+2024-04-17 23:11:18.530 [prti1516e: LRC[0x6ebf0f36] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3117>, ObjectClassHandle: objectClass<8>, Name: SolarSystemBarycentricInertial, FederateHandle: null
+2024-04-17 23:11:18.530 [prti1516e: LRC[0x6ebf0f36] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3126>, ObjectClassHandle: objectClass<8>, Name: MarsCentricInertial, FederateHandle: null
+2024-04-17 23:11:19.451 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:20.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:21.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:22.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:23.193 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:24.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:25.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:26.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:27.194 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:28.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:29.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:30.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:31.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:32.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:33.193 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:34.192 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:35.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:36.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:37.198 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:38.195 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:39.192 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:40.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:41.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:42.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:43.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:44.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:45.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:46.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:47.195 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:48.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:49.193 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:50.205 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:51.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:52.196 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:53.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:54.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:55.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:56.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:57.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:58.194 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:11:59.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:00.193 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:01.203 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:02.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:03.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:04.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:05.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:06.176 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:07.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:08.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:09.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:10.193 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:11.202 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:12.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:13.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:14.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:15.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:16.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:17.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:18.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:19.196 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:20.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:21.194 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:22.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:23.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:24.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:25.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:26.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:27.192 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:28.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:29.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:30.196 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:31.177 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:32.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:33.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:34.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:35.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:36.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:37.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:38.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:39.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:40.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:41.209 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:42.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:43.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:44.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:45.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:46.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:47.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:48.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:49.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:50.178 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:51.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:52.206 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:53.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:54.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:55.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:56.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:57.195 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:58.193 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:12:59.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:00.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:01.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:02.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:03.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:04.201 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:05.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:06.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:07.195 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:08.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:09.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:10.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:11.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:12.179 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:13.177 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:14.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:15.177 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:16.192 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:17.203 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:18.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:19.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:20.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:21.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:22.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:23.178 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:24.177 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:25.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:26.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:27.194 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:28.208 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:29.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:30.197 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:31.194 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:32.194 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:33.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:34.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:35.192 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:36.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:37.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:38.200 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:39.211 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:40.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:41.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:42.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:43.179 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:44.193 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:45.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:46.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:47.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:48.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:49.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:50.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:51.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:52.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:53.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:54.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:55.177 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:56.192 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:57.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:58.193 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:13:59.192 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:00.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:01.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:02.179 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:03.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:04.204 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:05.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:06.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:07.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:08.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:09.178 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:10.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:11.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:12.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:13.177 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:14.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:15.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:16.178 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:17.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:18.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:19.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:20.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:21.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:22.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:23.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:24.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:25.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:26.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:27.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:28.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:29.216 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:30.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:31.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:32.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:33.192 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:34.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:35.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:36.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:37.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:38.192 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:39.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:40.200 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:41.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:42.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:43.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:44.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:45.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:46.179 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:47.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:48.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:49.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:50.177 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:51.208 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:52.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:53.215 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:54.178 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:55.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:56.176 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:57.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:58.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:14:59.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:00.200 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:01.198 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:02.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:03.176 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:04.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:05.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:06.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:07.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:08.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:09.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:10.177 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:11.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:12.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:13.212 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:14.178 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:15.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:16.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:17.178 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:18.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:19.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:20.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:21.179 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:22.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:23.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:24.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:25.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:26.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:27.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:28.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:29.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:30.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:31.178 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:32.176 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:33.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:34.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:35.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:36.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:37.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:38.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:39.178 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:40.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:41.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:42.202 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:43.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:44.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:45.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:46.179 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:47.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:48.178 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:49.178 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:50.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:51.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:52.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:53.177 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:54.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:55.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:56.179 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:57.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:58.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:15:59.213 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:00.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:01.175 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:02.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:03.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:04.178 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:05.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:06.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:07.198 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:08.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:09.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:10.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:11.179 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:12.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:13.197 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:14.179 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:15.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:16.217 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:17.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:18.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:19.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:20.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:21.197 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:22.177 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:23.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:24.201 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:25.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:26.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:27.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:28.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:29.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:30.177 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:31.177 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:32.219 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:33.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:34.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:35.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:36.195 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:37.194 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:38.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:39.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:40.214 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:41.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:42.178 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:43.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:44.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:45.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:46.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:47.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:48.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:49.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:50.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:51.177 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:52.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:53.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:54.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:55.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:56.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:57.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:58.179 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:16:59.176 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:00.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:01.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:02.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:03.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:04.209 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:05.191 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:06.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:07.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:08.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:09.194 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:10.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:11.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:12.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:13.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:14.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:15.215 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:16.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:17.196 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:18.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:19.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:20.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:21.178 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:22.176 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:23.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:24.199 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:25.195 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:26.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:27.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:28.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:29.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:30.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:31.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:32.179 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:33.175 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:34.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:35.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:36.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:37.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:38.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:39.179 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:40.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:41.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:42.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:43.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:44.178 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:45.176 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:46.189 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:47.206 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:48.190 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:49.187 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:50.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:51.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:52.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:53.177 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:54.175 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:55.186 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:56.198 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:57.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:58.180 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:17:59.183 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:18:00.184 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:18:01.179 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:18:02.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:18:03.176 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:18:04.179 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:18:05.198 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:18:06.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:18:07.188 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:18:08.185 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:18:09.181 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-17 23:24:13.910 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-17 23:24:36.131 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-17 23:24:36.142 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-17 23:24:36.268 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-17 23:24:36.318 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-17 23:24:37.071 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-17 23:24:37.072 [main] INFO  skf.core.SEEHLAModule - Join the federate ' TestCommHub ' into the Federation execution ' SEE 2024 '.
+2024-04-17 23:24:37.839 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-17 23:24:37.839 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-17 23:24:37.966 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-17 23:24:37.987 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-17 23:24:38.001 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<2117>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-17 23:24:38.209 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-17 23:24:38.214 [main] INFO  skf.core.SEEHLAModule - The Object ' model.TestCommHub@291120f4 ' has been published.
+2024-04-17 23:24:38.215 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' AitkenBasinLocalFixed ' ReferenceFrame
+2024-04-17 23:24:38.223 [main] INFO  skf.core.SEEHLAModule - Set up time management.
+2024-04-17 23:24:38.223 [main] INFO  skf.core.SEEHLAModule - Time constrained enabled.
+2024-04-17 23:24:38.236 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3127>, ObjectClassHandle: objectClass<8>, Name: MarsCentricFixed, FederateHandle: null
+2024-04-17 23:24:38.244 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3123>, ObjectClassHandle: objectClass<8>, Name: MoonCentricInertial, FederateHandle: null
+2024-04-17 23:24:38.244 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3118>, ObjectClassHandle: objectClass<8>, Name: SunCentricInertial, FederateHandle: null
+2024-04-17 23:24:38.244 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3125>, ObjectClassHandle: objectClass<8>, Name: EarthMoonL2Rotating, FederateHandle: null
+2024-04-17 23:24:38.244 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3120>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricRotating, FederateHandle: null
+2024-04-17 23:24:38.244 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3122>, ObjectClassHandle: objectClass<8>, Name: EarthCentricFixed, FederateHandle: null
+2024-04-17 23:24:38.244 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3129>, ObjectClassHandle: objectClass<8>, Name: SeeLunarSouthPoleBaseLocalFixed, FederateHandle: null
+2024-04-17 23:24:38.244 [prti1516e: LRC[0x018920cc] Federate service] ERROR skf.core.SEEAbstractFederateAmbassador - Can't find the FrameType: SeeLunarSouthPoleBaseLocalFixed
+2024-04-17 23:24:38.244 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3121>, ObjectClassHandle: objectClass<8>, Name: EarthCentricInertial, FederateHandle: null
+2024-04-17 23:24:38.244 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3128>, ObjectClassHandle: objectClass<8>, Name: AitkenBasinLocalFixed, FederateHandle: null
+2024-04-17 23:24:38.244 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3124>, ObjectClassHandle: objectClass<8>, Name: MoonCentricFixed, FederateHandle: null
+2024-04-17 23:24:38.244 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3119>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricInertial, FederateHandle: null
+2024-04-17 23:24:38.244 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3117>, ObjectClassHandle: objectClass<8>, Name: SolarSystemBarycentricInertial, FederateHandle: null
+2024-04-17 23:24:38.244 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3126>, ObjectClassHandle: objectClass<8>, Name: MarsCentricInertial, FederateHandle: null

@@ -1,0 +1,27 @@
+import java.io.File;
+
+import core.CommHubFederate;
+import core.CommHubFederateAmbassador;
+import model.Position;
+import model.CommHub;
+import skf.config.ConfigurationFactory;
+
+
+public class CommHubMain {
+	
+	private static final File conf = new File("config/conf.json");
+	
+	public static void main(String[] args) throws Exception {
+		
+		String[] var1 = null;
+		
+		CommHub commHub = new CommHub("CommHub", "AitkenBasinLocalFixed", new Position(0, 0, 0));
+		
+		CommHubFederateAmbassador ambassador = new CommHubFederateAmbassador();
+		CommHubFederate federate = new CommHubFederate(ambassador, commHub, var1);
+		
+		// start execution
+		federate.configureAndStart(new ConfigurationFactory().importConfiguration(conf));
+	}
+
+}

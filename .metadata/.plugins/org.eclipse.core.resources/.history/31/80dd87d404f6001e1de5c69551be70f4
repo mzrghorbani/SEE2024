@@ -1,0 +1,15 @@
+{
+  "asynchronousDelivery" : true,
+  "crcHost" : "localhost",
+  "crcPort" : 8989,
+  "federateName" : "CommHub",
+  "federateType" : "Port",
+  "federateRole" : "LATE",
+  "federationName" : "SEE 2024",
+  "fomDirectory" : "foms",
+  "realtime" : false,
+  "simulationScenarioTimeEphoc" : 15,
+  "timeConstrained" : true,
+  "timeRegulating" : false,
+  "lookahead": 1000000
+}

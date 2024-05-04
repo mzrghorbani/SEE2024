@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;HLAtoDON/FederateConfigSee2017.xml&apos; to &apos;FederateConfigSEE2024.xml&apos;" description="Rename resource &apos;FederateConfigSee2017.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="FederateConfigSee2017.xml" name="FederateConfigSEE2024.xml" stamp="1706110659281" updateReferences="true"/>&#x0A;&#x0A;<refactoring comment="Rename resource &apos;HLAtoDON/fom&apos; to &apos;foms&apos;" description="Rename resource &apos;fom&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="fom" name="foms" stamp="1706459480936" updateReferences="true"/>
+</session>

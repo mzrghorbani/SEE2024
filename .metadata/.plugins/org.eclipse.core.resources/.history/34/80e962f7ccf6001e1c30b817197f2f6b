@@ -1,0 +1,300 @@
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import hla.rti1516_202X.RtiConfiguration;
+import hla.rti1516e.AttributeHandle;
+import hla.rti1516e.AttributeHandleSet;
+import hla.rti1516e.AttributeHandleValueMap;
+import hla.rti1516e.CallbackModel;
+import hla.rti1516e.FederateAmbassador;
+import hla.rti1516e.FederateHandle;
+import hla.rti1516e.InteractionClassHandle;
+import hla.rti1516e.NullFederateAmbassador;
+import hla.rti1516e.ObjectClassHandle;
+import hla.rti1516e.ObjectInstanceHandle;
+import hla.rti1516e.OrderType;
+import hla.rti1516e.ParameterHandle;
+import hla.rti1516e.ParameterHandleValueMap;
+import hla.rti1516e.RTIambassador;
+import hla.rti1516e.ResignAction;
+import hla.rti1516e.RtiFactory;
+import hla.rti1516e.RtiFactoryFactory;
+import hla.rti1516e.TransportationTypeHandle;
+import hla.rti1516e.encoding.DecoderException;
+import hla.rti1516e.encoding.EncoderFactory;
+import hla.rti1516e.encoding.HLAunicodeString;
+import hla.rti1516e.exceptions.FederatesCurrentlyJoined;
+import hla.rti1516e.exceptions.FederationExecutionAlreadyExists;
+import hla.rti1516e.exceptions.IllegalName;
+import hla.rti1516e.exceptions.RTIexception;
+
+class TestFederate extends NullFederateAmbassador {
+	public String federateName = "TestFederate";
+	private static final int CRC_PORT = 8989;
+	private static final String FEDERATION_NAME = "SEE 2024";
+	private final List<String> _args;
+	private final BufferedReader _systemInput;
+	private RTIambassador _rtiAmbassador;
+	private InteractionClassHandle _communicationClassHandle;
+	private ParameterHandle _messageParameterHandle;
+	private ParameterHandle _senderParameterHandle;
+	private ObjectInstanceHandle _userInstanceHandle;
+	private AttributeHandle _nameAttributeHandle;
+	private String _username;
+	private volatile boolean _reservationComplete;
+	private volatile boolean _reservationSucceeded;
+	private final Object _reservationSemaphore = new Object();
+	private EncoderFactory _encoderFactory;
+	private final Map<ObjectInstanceHandle, Participant> _knownObjects = new HashMap();
+
+	TestFederate(String[] var1) {
+		this._args = new ArrayList<String>(List.of(var1));
+		this._systemInput = new BufferedReader(new InputStreamReader(System.in));
+	}
+
+	void tryRun() {
+		try {
+			this.run();
+		} catch (RuntimeException var2) {
+			System.err.println("Unexpected exception: " + var2);
+			var2.printStackTrace();
+			this.pressEnterToShutDown();
+		} catch (Exception var3) {
+			System.err.println("" + var3);
+			this.pressEnterToShutDown();
+		}
+
+	}
+
+	private void pressEnterToShutDown() {
+		try {
+			System.out.println("Press <ENTER> to shutdown");
+			this._systemInput.readLine();
+		} catch (IOException var2) {
+		}
+
+	}
+
+	private void run() throws Exception {
+		RtiFactory var1;
+		var1 = RtiFactoryFactory.getRtiFactory();
+		String var2 = "localhost";
+		if (this._args.size() > 0) {
+			var2 = (String) this._args.get(0);
+		} else {
+			System.out.println("Enter the CRC address, such as");
+			System.out.println("'localhost', 'localhost:8989', '192.168.1.62'");
+			System.out.println("or when using Pitch Booster on the form");
+			System.out.println("<CRC name>@<booster address>:<booster port>");
+			System.out.println("such as 'MyCRCname@192.168.1.70:8688'");
+			System.out.println();
+		}
+
+		try {
+			this._rtiAmbassador = var1.getRtiAmbassador();
+			this._encoderFactory = var1.getEncoderFactory();
+		} catch (Exception var19) {
+			throw new Exception("Unable to create RTI ambassador: " + var19);
+		}
+		
+		Object config = RtiConfiguration.createConfiguration()
+				.withConfigurationName("TestFederate")
+				.withRtiAddress("192.168.11.5:8989")
+				.withAdditionalSettings("secretSetting=5");
+
+		RtiConfiguration var4 = RtiConfiguration.createConfiguration().withRtiAddress(var2);
+
+		this._rtiAmbassador.connect(this, CallbackModel.HLA_IMMEDIATE, config.toString());
+
+//		try {
+//			this._rtiAmbassador.destroyFederationExecution("SEE 2024");
+//		} catch (FederationExecutionDoesNotExist var17) {
+//		}
+
+		File var5 = new File("foms/TestFederate.xml");
+		
+//		this._rtiAmbassador.createFederationExecution("SEE 2024", new URL[] {var5.toURI().toURL()}, "HLAfloat64Time");
+
+		try {
+			this._rtiAmbassador.createFederationExecution("SEE 2024", new URL[] { var5.toURI().toURL() }, "HLAfloat64Time");
+			System.out.println("Federation execution created successfully.");
+		} catch (FederationExecutionAlreadyExists var15) {
+			System.out.println("Federation exist already. Join " + this.federateName);
+		}
+
+		this._rtiAmbassador.joinFederationExecution("TestFederate", "SEE 2024", new URL[] { var5.toURI().toURL() });
+		this._communicationClassHandle = this._rtiAmbassador.getInteractionClassHandle("Communication");
+		this._messageParameterHandle = this._rtiAmbassador.getParameterHandle(this._communicationClassHandle,
+				"Message");
+		this._senderParameterHandle = this._rtiAmbassador.getParameterHandle(this._communicationClassHandle, "Sender");
+		this._rtiAmbassador.subscribeInteractionClass(this._communicationClassHandle);
+		this._rtiAmbassador.publishInteractionClass(this._communicationClassHandle);
+
+		ObjectClassHandle var6 = this._rtiAmbassador.getObjectClassHandle("Participant");
+		this._nameAttributeHandle = this._rtiAmbassador.getAttributeHandle(var6, "Name");
+		AttributeHandleSet var7 = this._rtiAmbassador.getAttributeHandleSetFactory().create();
+		var7.add(this._nameAttributeHandle);
+		this._rtiAmbassador.subscribeObjectClassAttributes(var6, var7);
+		this._rtiAmbassador.publishObjectClassAttributes(var6, var7);
+
+		do {
+			this._username = this.federateName;
+			try {
+				this._reservationComplete = false;
+				this._rtiAmbassador.reserveObjectInstanceName(this._username);
+				synchronized (this._reservationSemaphore) {
+					while (!this._reservationComplete) {
+						try {
+							this._reservationSemaphore.wait();
+						} catch (InterruptedException var14) {
+						}
+					}
+				}
+
+				if (!this._reservationSucceeded) {
+					System.out.println("Federate already taken, try again.");
+				}
+			} catch (IllegalName var21) {
+				System.out.println("Illegal name. Try again.");
+			} catch (RTIexception var22) {
+				System.err.println("RTI exception when reserving name: " + var22.getMessage());
+				return;
+			}
+		} while (!this._reservationSucceeded);
+
+		this._userInstanceHandle = this._rtiAmbassador.registerObjectInstance(var6, this._username);
+		AttributeHandleValueMap var8 = this._rtiAmbassador.getAttributeHandleValueMapFactory().create(1);
+		HLAunicodeString var9 = this._encoderFactory.createHLAunicodeString(this._username);
+		var8.put(this._nameAttributeHandle, var9.toByteArray());
+		this._rtiAmbassador.updateAttributeValues(this._userInstanceHandle, var8, (byte[]) null);
+		System.out.println("Type messages you want to send. To exit, type . <ENTER>");
+
+		while (true) {
+			System.out.print("> ");
+			String var10 = this._systemInput.readLine();
+			if (var10.equals(".")) {
+				this._rtiAmbassador.resignFederationExecution(ResignAction.DELETE_OBJECTS_THEN_DIVEST);
+
+				try {
+					this._rtiAmbassador.destroyFederationExecution("SEE 2024");
+				} catch (FederatesCurrentlyJoined var13) {
+				}
+
+				this._rtiAmbassador.disconnect();
+				this._rtiAmbassador = null;
+				return;
+			}
+
+			ParameterHandleValueMap var11 = this._rtiAmbassador.getParameterHandleValueMapFactory().create(1);
+			HLAunicodeString var12 = this._encoderFactory.createHLAunicodeString();
+			var12.setValue(var10);
+			var11.put(this._messageParameterHandle, var12.toByteArray());
+			var11.put(this._senderParameterHandle, var9.toByteArray());
+			this._rtiAmbassador.sendInteraction(this._communicationClassHandle, var11, (byte[]) null);
+		}
+	}
+
+	public void receiveInteraction(InteractionClassHandle var1, ParameterHandleValueMap var2, byte[] var3,
+			OrderType var4, TransportationTypeHandle var5, FederateAmbassador.SupplementalReceiveInfo var6) {
+		if (var1.equals(this._communicationClassHandle)) {
+			if (!var2.containsKey(this._messageParameterHandle)) {
+				System.err.println("Bad message received: No text.");
+				return;
+			}
+
+			if (!var2.containsKey(this._senderParameterHandle)) {
+				System.err.println("Bad message received: No sender.");
+				return;
+			}
+
+			try {
+				HLAunicodeString var7 = this._encoderFactory.createHLAunicodeString();
+				HLAunicodeString var8 = this._encoderFactory.createHLAunicodeString();
+				var7.decode((byte[]) var2.get(this._messageParameterHandle));
+				var8.decode((byte[]) var2.get(this._senderParameterHandle));
+				String var9 = var7.getValue();
+				String var10 = var8.getValue();
+				System.out.println(var10 + ": " + var9);
+				System.out.print("> ");
+			} catch (DecoderException var11) {
+				System.err.println("Failed to decode incoming interaction");
+			}
+		}
+
+	}
+
+	public final void objectInstanceNameReservationSucceeded(String var1) {
+		synchronized (this._reservationSemaphore) {
+			this._reservationComplete = true;
+			this._reservationSucceeded = true;
+			this._reservationSemaphore.notifyAll();
+		}
+	}
+
+	public final void objectInstanceNameReservationFailed(String var1) {
+		synchronized (this._reservationSemaphore) {
+			this._reservationComplete = true;
+			this._reservationSucceeded = false;
+			this._reservationSemaphore.notifyAll();
+		}
+	}
+
+	public void removeObjectInstance(ObjectInstanceHandle var1, byte[] var2, OrderType var3, FederateHandle var4) {
+		Participant var5 = (Participant) this._knownObjects.remove(var1);
+		if (var5 != null) {
+			System.out.println("[" + var5 + " has left]");
+		}
+
+	}
+
+	public void reflectAttributeValues(ObjectInstanceHandle var1, AttributeHandleValueMap var2, byte[] var3,
+			OrderType var4, TransportationTypeHandle var5, FederateAmbassador.SupplementalReflectInfo var6) {
+		if (!this._knownObjects.containsKey(var1) && var2.containsKey(this._nameAttributeHandle)) {
+			try {
+				HLAunicodeString var7 = this._encoderFactory.createHLAunicodeString();
+				var7.decode((byte[]) var2.get(this._nameAttributeHandle));
+				String var8 = var7.getValue();
+				Participant var9 = new Participant(var8);
+				System.out.println("[" + var9 + " has joined]");
+				System.out.print("> ");
+				this._knownObjects.put(var1, var9);
+			} catch (DecoderException var10) {
+				System.err.println("Failed to decode incoming attribute");
+			}
+		}
+
+	}
+
+	public final void provideAttributeValueUpdate(ObjectInstanceHandle var1, AttributeHandleSet var2, byte[] var3) {
+		if (var1.equals(this._userInstanceHandle) && var2.contains(this._nameAttributeHandle)) {
+			try {
+				AttributeHandleValueMap var4 = this._rtiAmbassador.getAttributeHandleValueMapFactory().create(1);
+				HLAunicodeString var5 = this._encoderFactory.createHLAunicodeString(this._username);
+				var4.put(this._nameAttributeHandle, var5.toByteArray());
+				this._rtiAmbassador.updateAttributeValues(this._userInstanceHandle, var4, (byte[]) null);
+			} catch (RTIexception var6) {
+			}
+		}
+
+	}
+
+	private static class Participant {
+		private final String _name;
+
+		Participant(String var1) {
+			this._name = var1;
+		}
+
+		public String toString() {
+			return this._name;
+		}
+	}
+}

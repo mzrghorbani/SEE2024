@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ObjectInfo version="1.0">
+    <OriginalFileInformation>
+        <File file="Sphere.obj" type="Geometry" creationDate="2024-05-02T14:02:58.5442462Z" lastWriteDate="2024-05-02T14:02:16.3934906Z" SHA1Hash="6925b851c1d5a12cd38ec4dc6f76c5d73aab9b64" />
+        <File file="C:\Users\mazia\eclipse-workbench\DON-Simulation-Directory\models\Sphere.mtl " type="Materials" creationDate="0001-01-01T00:00:00.0000000" lastWriteDate="0001-01-01T00:00:00.0000000" SHA1Hash="" />
+    </OriginalFileInformation>
+    <Materials>
+        <Material id="default" name="default" shaderName="Specular">
+            <Attributes>
+                <Transparency value="1" />
+                <Color type="_Color" value="1 0 0 1" />
+                <Color type="_SpecColor" value="1 1 1 1" />
+                <Scalar type="_Shininess" value="0.5" />
+            </Attributes>
+        </Material>
+    </Materials>
+    <Meshes totalTriangles="960" totalVertices="1984">
+        <Mesh name="Sphere.obj_Mesh" triangles="960" vertices="1984">
+            <SubMeshes>
+                <SubMesh triangles="960" vertices="1984">
+                    <SubMeshMaterials>
+                        <SubMeshMaterial index="0" />
+                    </SubMeshMaterials>
+                </SubMesh>
+            </SubMeshes>
+        </Mesh>
+    </Meshes>
+</ObjectInfo>

@@ -1,0 +1,54 @@
+package model;
+
+import skf.coder.HLAunicodeStringCoder;
+import skf.model.object.annotations.Attribute;
+import skf.model.object.annotations.ObjectClass;
+
+@ObjectClass(name = "PhysicalInterface.CommHub")
+public class CommHub {
+	
+	@Attribute(name = "name", coder = HLAunicodeStringCoder.class)
+	private String name = null;
+	
+	@Attribute(name = "parent_name", coder = HLAunicodeStringCoder.class)
+	private String parent_name = null;
+	
+	@Attribute(name = "var1", coder = HLAunicodeStringCoder.class)
+	private String[] var1 = null;
+	
+	public CommHub(){}
+
+	public CommHub(String name, String parent_name, String[] var1) {
+		this.name = name;
+		this.parent_name = parent_name;
+		this.var1 = var1;
+	}
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/**
+	 * @return the parent_name
+	 */
+	public String getParent_name() {
+		return parent_name;
+	}
+
+	/**
+	 * @param parent_name the parent_name to set
+	 */
+	public void setParent_name(String parent_name) {
+		this.parent_name = parent_name;
+	}
+}

@@ -1,0 +1,116 @@
+package model;
+
+import org.apache.commons.math3.geometry.euclidean.threed.Vector3D;
+import org.siso.spacefom.frame.ReferenceFrameTranslation;
+import org.siso.spacefom.frame.SpaceTimeCoordinateState;
+import referenceFrame.coder.*;
+import siso.smackdown.frame.ReferenceFrame;
+import skf.coder.HLAunicodeStringCoder;
+import skf.model.object.annotations.Attribute;
+import skf.model.object.annotations.ObjectClass;
+
+@ObjectClass(name = "PhysicalEntity.LunarRover")
+public class LunarRover {
+	
+	@Attribute(name = "name", coder = HLAunicodeStringCoder.class)
+	private String name = null;
+	
+	@Attribute(name = "parent_reference_frame", coder = HLAunicodeStringCoder.class)
+	private String parent_name = null;
+	
+	@Attribute(name = "state", coder = SpaceTimeCoordinateStateCoder.class)
+	private SpaceTimeCoordinateState state = null;
+	
+	@Attribute(name = "type", coder = HLAunicodeStringCoder.class)
+	private String type = null;
+	
+	private Position position = null;
+	private Quaternion quaternion = null;
+	
+	public LunarRover(){}
+
+	public LunarRover(String name, String type, String parent_name, Position position, Quaternion quaternion) {
+		this.name = name;
+		this.type = type;
+		this.parent_name = parent_name;
+		this.state = new SpaceTimeCoordinateState();
+		this.position = position;
+		this.quaternion = quaternion;
+	}
+	
+	public String getType() {
+	    return type;
+	}
+
+	public void setType(String type) {
+	    this.type = type;
+	}
+	
+
+	public SpaceTimeCoordinateState getState() {
+	    return state;
+	}
+
+	public void setState(SpaceTimeCoordinateState state) {
+	    this.state = state;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getParent_name() {
+		return parent_name;
+	}
+
+	public void setParent_name(String parent_name) {
+		this.parent_name = parent_name;
+	}
+
+	public Position getPosition() {
+		return position;
+	}
+
+	public void setPosition(Position position) {
+		this.position = position;
+	}
+
+	public Quaternion getQuaternion() {
+		return quaternion;
+	}
+
+	public void setQuaternion(Quaternion quaternion) {
+		this.quaternion = quaternion;
+	}
+
+	public void updatePositionBasedOnReferenceFrame(ReferenceFrame referenceFrame) {
+	    // Assume that referenceFrame contains new translational data that should be applied to the rover.
+	    // Fetch the current translational state of the rover
+	    SpaceTimeCoordinateState currentState = this.getState();
+	    ReferenceFrameTranslation currentTransState = currentState.getTranslationalState();
+	    Vector3D currentPosition = currentTransState.getPosition();
+
+	    // Get the position from the reference frame (assuming the reference frame translation provides this)
+	    Vector3D referenceFramePosition = referenceFrame.getState().getTranslationalState().getPosition();
+
+	    // Example operation: Add the reference frame's position to the current position
+	    // This assumes that the referenceFrame position is a delta (change) rather than an absolute position.
+	    // If it's absolute, you might directly set it or calculate the difference depending on the requirement.
+	    Vector3D newPosition = currentPosition.add(referenceFramePosition);
+
+	    // Update the rover's translational state with the new position
+	    currentTransState.setPosition(newPosition);
+	    currentState.setTranslationalState(currentTransState);
+
+	    // Save the updated state back to the rover
+	    this.setState(currentState);
+
+	    // Optionally print out the new position for debugging
+	    System.out.println("Updated position of LunarRover based on Reference Frame: " + newPosition);
+	}
+
+}

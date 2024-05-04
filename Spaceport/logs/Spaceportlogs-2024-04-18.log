@@ -1,0 +1,399 @@
+2024-04-18 21:10:59.877 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:10:59.919 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:11:00.092 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:11:00.155 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:11:00.909 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:11:00.918 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:11:01.813 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-18 21:11:01.813 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-18 21:11:01.880 [prti1516e: LRC[0x6ff65192] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-18 21:11:01.915 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-18 21:11:01.924 [prti1516e: LRC[0x6ff65192] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<2117>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-18 21:11:02.070 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-18 21:11:02.077 [main] INFO  skf.core.SEEHLAModule - The Object ' model.Spaceport@3d7cc3cb ' has been published.
+2024-04-18 21:11:02.078 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' AitkenBasinLocalFixed ' ReferenceFrame
+2024-04-18 21:11:02.087 [main] INFO  skf.core.SEEHLAModule - Set up time management.
+2024-04-18 21:11:02.087 [main] INFO  skf.core.SEEHLAModule - Time constrained enabled.
+2024-04-18 21:11:02.094 [prti1516e: LRC[0x6ff65192] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3127>, ObjectClassHandle: objectClass<8>, Name: MarsCentricFixed, FederateHandle: null
+2024-04-18 21:11:02.104 [prti1516e: LRC[0x6ff65192] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3123>, ObjectClassHandle: objectClass<8>, Name: MoonCentricInertial, FederateHandle: null
+2024-04-18 21:11:02.104 [prti1516e: LRC[0x6ff65192] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3118>, ObjectClassHandle: objectClass<8>, Name: SunCentricInertial, FederateHandle: null
+2024-04-18 21:11:02.104 [prti1516e: LRC[0x6ff65192] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3125>, ObjectClassHandle: objectClass<8>, Name: EarthMoonL2Rotating, FederateHandle: null
+2024-04-18 21:11:02.104 [prti1516e: LRC[0x6ff65192] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3120>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricRotating, FederateHandle: null
+2024-04-18 21:11:02.104 [prti1516e: LRC[0x6ff65192] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3122>, ObjectClassHandle: objectClass<8>, Name: EarthCentricFixed, FederateHandle: null
+2024-04-18 21:11:02.104 [prti1516e: LRC[0x6ff65192] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3129>, ObjectClassHandle: objectClass<8>, Name: SeeLunarSouthPoleBaseLocalFixed, FederateHandle: null
+2024-04-18 21:11:02.105 [prti1516e: LRC[0x6ff65192] Federate service] ERROR skf.core.SEEAbstractFederateAmbassador - Can't find the FrameType: SeeLunarSouthPoleBaseLocalFixed
+2024-04-18 21:11:02.105 [prti1516e: LRC[0x6ff65192] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3121>, ObjectClassHandle: objectClass<8>, Name: EarthCentricInertial, FederateHandle: null
+2024-04-18 21:11:02.105 [prti1516e: LRC[0x6ff65192] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3128>, ObjectClassHandle: objectClass<8>, Name: AitkenBasinLocalFixed, FederateHandle: null
+2024-04-18 21:11:02.105 [prti1516e: LRC[0x6ff65192] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3124>, ObjectClassHandle: objectClass<8>, Name: MoonCentricFixed, FederateHandle: null
+2024-04-18 21:11:02.105 [prti1516e: LRC[0x6ff65192] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3119>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricInertial, FederateHandle: null
+2024-04-18 21:11:02.105 [prti1516e: LRC[0x6ff65192] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3117>, ObjectClassHandle: objectClass<8>, Name: SolarSystemBarycentricInertial, FederateHandle: null
+2024-04-18 21:11:02.106 [prti1516e: LRC[0x6ff65192] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3126>, ObjectClassHandle: objectClass<8>, Name: MarsCentricInertial, FederateHandle: null
+2024-04-18 21:11:04.131 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:04.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:05.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:06.901 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:07.900 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:08.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:09.901 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:10.898 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:11.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:12.900 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:13.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:14.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:15.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:16.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:17.917 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:18.914 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:19.936 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:20.900 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:21.926 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:22.909 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:23.911 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:24.894 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:25.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:26.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:27.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:28.900 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:29.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:30.897 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:31.911 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:32.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:33.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:34.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:35.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:36.895 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:37.909 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:38.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:39.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:40.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:41.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:42.898 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:43.896 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:44.911 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:45.910 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:46.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:47.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:48.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:49.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:50.897 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:51.895 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:52.893 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:53.921 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:54.900 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:55.911 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:56.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:57.892 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:58.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:11:59.900 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:00.916 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:01.901 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:02.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:03.895 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:04.908 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:05.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:06.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:07.900 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:08.898 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:09.895 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:10.909 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:11.895 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:12.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:13.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:14.897 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:15.894 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:16.908 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:17.920 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:18.901 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:19.910 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:20.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:21.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:22.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:23.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:24.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:25.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:26.900 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:27.897 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:28.892 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:29.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:30.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:31.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:32.908 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:33.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:34.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:35.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:36.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:37.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:38.897 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:39.896 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:40.896 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:41.897 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:42.908 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:43.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:44.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:45.897 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:46.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:47.901 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:48.914 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:49.896 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:50.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:51.908 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:52.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:53.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:54.900 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:55.897 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:56.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:57.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:58.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:12:59.897 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:00.895 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:01.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:02.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:03.908 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:04.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:05.910 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:06.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:07.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:08.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:09.896 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:10.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:11.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:12.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:13.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:14.896 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:15.908 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:16.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:17.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:18.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:19.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:20.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:21.901 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:22.901 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:23.894 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:24.911 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:25.956 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:26.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:27.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:28.901 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:29.898 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:30.909 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:31.895 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:32.910 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:33.897 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:34.908 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:35.908 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:36.896 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:37.894 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:38.908 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:39.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:40.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:41.909 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:42.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:43.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:44.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:45.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:46.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:47.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:48.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:49.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:50.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:51.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:52.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:53.896 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:54.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:55.901 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:56.914 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:57.892 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:58.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:13:59.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:00.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:01.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:02.901 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:03.897 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:04.896 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:05.891 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:06.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:07.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:08.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:09.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:10.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:11.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:12.898 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:13.908 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:14.894 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:15.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:16.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:17.900 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:18.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:19.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:20.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:21.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:22.910 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:23.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:24.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:25.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:27.230 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:27.901 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:29.240 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:29.895 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:30.911 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:31.898 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:32.895 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:33.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:34.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:35.901 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:36.901 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:37.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:38.908 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:39.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:40.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:41.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:42.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:43.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:44.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:45.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:46.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:47.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:48.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:49.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:50.897 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:52.241 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:52.898 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:53.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:54.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:55.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:56.894 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:57.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:58.909 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:14:59.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:00.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:01.900 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:02.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:03.897 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:04.897 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:05.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:06.905 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:07.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:08.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:09.895 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:10.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:11.906 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:12.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:13.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:14.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:15.900 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:16.895 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:17.898 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:18.894 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:19.904 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:20.902 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:21.899 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:22.900 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:23.903 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:24.994 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:15:25.897 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.Spaceport@3d7cc3cb' has been updated on the HLA/RTI platform.
+2024-04-18 21:29:34.167 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:29:34.179 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:29:34.308 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:29:34.352 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:29:35.047 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:29:35.048 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:30:05.943 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:30:05.955 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:30:06.094 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:30:06.139 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:30:06.834 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:30:06.834 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:37:05.743 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:37:05.754 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:37:05.890 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:37:05.939 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:37:06.644 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:37:06.645 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:37:44.612 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:37:44.624 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:37:44.759 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:37:44.804 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:37:45.529 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:37:45.530 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:39:16.146 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:39:16.159 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:39:16.306 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:39:16.361 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:39:17.091 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:39:17.092 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:40:55.674 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:40:55.685 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:40:55.821 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:40:55.872 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:40:56.653 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:40:56.654 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:42:25.342 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:42:25.356 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:42:25.522 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:42:25.574 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:42:26.285 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:42:26.286 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:42:51.090 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:42:51.102 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:42:51.232 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:42:51.277 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:42:51.989 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:42:51.990 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:43:37.949 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:43:37.964 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:43:38.141 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:43:38.196 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:43:38.581 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:43:38.582 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:43:53.894 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:43:53.906 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:43:54.045 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:43:54.093 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:43:54.804 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:43:54.805 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:44:33.303 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:44:33.316 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:44:33.453 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:44:33.500 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:44:33.846 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:44:33.847 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:45:28.991 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:45:29.003 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:45:29.135 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:45:29.183 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:46:02.158 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:46:02.169 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:46:02.305 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:46:02.352 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:46:03.057 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:46:03.058 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:46:36.939 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:46:36.952 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:46:37.090 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:46:37.137 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:46:37.841 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:46:37.842 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:47:05.062 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:47:05.078 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:47:05.209 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:47:05.256 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:47:05.999 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:47:06.001 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:47:46.392 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:47:46.405 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:47:46.539 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:47:46.591 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:47:47.335 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:47:47.336 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:48:59.518 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:48:59.529 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:48:59.669 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:48:59.723 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:49:00.435 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:49:00.436 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.
+2024-04-18 21:49:22.984 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 21:49:22.996 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 21:49:23.129 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 21:49:23.175 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 21:49:23.945 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 21:49:23.946 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Spaceport ' into the Federation execution ' SEE 2024 '.

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;jat&apos; to &apos;HLAtoDON&apos;&#x0D;&#x0A;- Original project: &apos;SEEEnvironment&apos;&#x0D;&#x0A;- Destination element: &apos;HLAtoDON&apos;&#x0D;&#x0A;- Original element: &apos;jat&apos;" description="Copy folder" destination="=HLAtoDON" element1="jat" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1707519436847" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,1081 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import hla.rti1516e.AttributeHandle;
+import hla.rti1516e.AttributeHandleSet;
+import hla.rti1516e.AttributeHandleValueMap;
+import hla.rti1516e.CallbackModel;
+import hla.rti1516e.FederateAmbassador;
+import hla.rti1516e.FederateHandle;
+import hla.rti1516e.FederateHandleSaveStatusPair;
+import hla.rti1516e.FederateHandleSet;
+import hla.rti1516e.FederateRestoreStatus;
+import hla.rti1516e.FederationExecutionInformationSet;
+import hla.rti1516e.InteractionClassHandle;
+import hla.rti1516e.LogicalTime;
+import hla.rti1516e.MessageRetractionHandle;
+import hla.rti1516e.NullFederateAmbassador;
+import hla.rti1516e.ObjectClassHandle;
+import hla.rti1516e.ObjectInstanceHandle;
+import hla.rti1516e.OrderType;
+import hla.rti1516e.ParameterHandle;
+import hla.rti1516e.ParameterHandleValueMap;
+import hla.rti1516e.RTIambassador;
+import hla.rti1516e.ResignAction;
+import hla.rti1516e.RestoreFailureReason;
+import hla.rti1516e.RtiFactory;
+import hla.rti1516e.RtiFactoryFactory;
+import hla.rti1516e.SaveFailureReason;
+import hla.rti1516e.SynchronizationPointFailureReason;
+import hla.rti1516e.TransportationTypeHandle;
+import hla.rti1516e.encoding.DecoderException;
+import hla.rti1516e.encoding.EncoderFactory;
+import hla.rti1516e.encoding.HLAunicodeString;
+import hla.rti1516e.exceptions.FederateInternalError;
+import hla.rti1516e.exceptions.FederatesCurrentlyJoined;
+import hla.rti1516e.exceptions.FederationExecutionAlreadyExists;
+import hla.rti1516e.exceptions.IllegalName;
+import hla.rti1516e.exceptions.RTIexception;
+import se.pitch.prti.FederateAmbassador_Impl;
+import skf.synchronizationPoint.SynchronizationPoint;
+
+class TestFederate implements FederateAmbassador {
+    public String federateName = "TestFederate";
+    private final String FEDERATION_NAME = "SEE 2024";
+    private BufferedReader _systemInput;
+    private RTIambassador _rtiAmbassador;
+    private InteractionClassHandle _communicationClassHandle;
+    private ParameterHandle _messageParameterHandle;
+    private ParameterHandle _senderParameterHandle;
+    private ObjectInstanceHandle _userInstanceHandle;
+    private AttributeHandle _nameAttributeHandle;
+    private String _username;
+    private volatile boolean _reservationComplete;
+    private volatile boolean _reservationSucceeded;
+    private final Object _reservationSemaphore = new Object();
+    private EncoderFactory _encoderFactory;
+    private final Map<ObjectInstanceHandle, Participant> _knownObjects = new HashMap<>();
+
+    private static final int MAX_WAIT_TIME = 100000; // milliseconds
+    
+    private FederateAmbassador federateAmbassador;
+    
+    private class MyFederateAmbassador implements FederateAmbassador {
+
+		@Override
+		public void connectionLost(String faultDescription) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void reportFederationExecutions(FederationExecutionInformationSet theFederationExecutionInformationSet)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void synchronizationPointRegistrationSucceeded(String synchronizationPointLabel)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void synchronizationPointRegistrationFailed(String synchronizationPointLabel,
+				SynchronizationPointFailureReason reason) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void announceSynchronizationPoint(String synchronizationPointLabel, byte[] userSuppliedTag)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void federationSynchronized(String synchronizationPointLabel, FederateHandleSet failedToSyncSet)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void initiateFederateSave(String label) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void initiateFederateSave(String label, LogicalTime time) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void federationSaved() throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void federationNotSaved(SaveFailureReason reason) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void federationSaveStatusResponse(FederateHandleSaveStatusPair[] response) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void requestFederationRestoreSucceeded(String label) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void requestFederationRestoreFailed(String label) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void federationRestoreBegun() throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void initiateFederateRestore(String label, String federateName, FederateHandle federateHandle)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void federationRestored() throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void federationNotRestored(RestoreFailureReason reason) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void federationRestoreStatusResponse(FederateRestoreStatus[] response) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void startRegistrationForObjectClass(ObjectClassHandle theClass) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void stopRegistrationForObjectClass(ObjectClassHandle theClass) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void turnInteractionsOn(InteractionClassHandle theHandle) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void turnInteractionsOff(InteractionClassHandle theHandle) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void objectInstanceNameReservationSucceeded(String objectName) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void objectInstanceNameReservationFailed(String objectName) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void multipleObjectInstanceNameReservationSucceeded(Set<String> objectNames)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void multipleObjectInstanceNameReservationFailed(Set<String> objectNames) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void discoverObjectInstance(ObjectInstanceHandle theObject, ObjectClassHandle theObjectClass,
+				String objectName) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void discoverObjectInstance(ObjectInstanceHandle theObject, ObjectClassHandle theObjectClass,
+				String objectName, FederateHandle producingFederate) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void reflectAttributeValues(ObjectInstanceHandle theObject, AttributeHandleValueMap theAttributes,
+				byte[] userSuppliedTag, OrderType sentOrdering, TransportationTypeHandle theTransport,
+				SupplementalReflectInfo reflectInfo) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void reflectAttributeValues(ObjectInstanceHandle theObject, AttributeHandleValueMap theAttributes,
+				byte[] userSuppliedTag, OrderType sentOrdering, TransportationTypeHandle theTransport,
+				LogicalTime theTime, OrderType receivedOrdering, SupplementalReflectInfo reflectInfo)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void reflectAttributeValues(ObjectInstanceHandle theObject, AttributeHandleValueMap theAttributes,
+				byte[] userSuppliedTag, OrderType sentOrdering, TransportationTypeHandle theTransport,
+				LogicalTime theTime, OrderType receivedOrdering, MessageRetractionHandle retractionHandle,
+				SupplementalReflectInfo reflectInfo) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void receiveInteraction(InteractionClassHandle interactionClass, ParameterHandleValueMap theParameters,
+				byte[] userSuppliedTag, OrderType sentOrdering, TransportationTypeHandle theTransport,
+				SupplementalReceiveInfo receiveInfo) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void receiveInteraction(InteractionClassHandle interactionClass, ParameterHandleValueMap theParameters,
+				byte[] userSuppliedTag, OrderType sentOrdering, TransportationTypeHandle theTransport,
+				LogicalTime theTime, OrderType receivedOrdering, SupplementalReceiveInfo receiveInfo)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void receiveInteraction(InteractionClassHandle interactionClass, ParameterHandleValueMap theParameters,
+				byte[] userSuppliedTag, OrderType sentOrdering, TransportationTypeHandle theTransport,
+				LogicalTime theTime, OrderType receivedOrdering, MessageRetractionHandle retractionHandle,
+				SupplementalReceiveInfo receiveInfo) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void removeObjectInstance(ObjectInstanceHandle theObject, byte[] userSuppliedTag, OrderType sentOrdering,
+				SupplementalRemoveInfo removeInfo) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void removeObjectInstance(ObjectInstanceHandle theObject, byte[] userSuppliedTag, OrderType sentOrdering,
+				LogicalTime theTime, OrderType receivedOrdering, SupplementalRemoveInfo removeInfo)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void removeObjectInstance(ObjectInstanceHandle theObject, byte[] userSuppliedTag, OrderType sentOrdering,
+				LogicalTime theTime, OrderType receivedOrdering, MessageRetractionHandle retractionHandle,
+				SupplementalRemoveInfo removeInfo) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void attributesInScope(ObjectInstanceHandle theObject, AttributeHandleSet theAttributes)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void attributesOutOfScope(ObjectInstanceHandle theObject, AttributeHandleSet theAttributes)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void provideAttributeValueUpdate(ObjectInstanceHandle theObject, AttributeHandleSet theAttributes,
+				byte[] userSuppliedTag) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void turnUpdatesOnForObjectInstance(ObjectInstanceHandle theObject, AttributeHandleSet theAttributes)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void turnUpdatesOnForObjectInstance(ObjectInstanceHandle theObject, AttributeHandleSet theAttributes,
+				String updateRateDesignator) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void turnUpdatesOffForObjectInstance(ObjectInstanceHandle theObject, AttributeHandleSet theAttributes)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void confirmAttributeTransportationTypeChange(ObjectInstanceHandle theObject,
+				AttributeHandleSet theAttributes, TransportationTypeHandle theTransportation)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void reportAttributeTransportationType(ObjectInstanceHandle theObject, AttributeHandle theAttribute,
+				TransportationTypeHandle theTransportation) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void confirmInteractionTransportationTypeChange(InteractionClassHandle theInteraction,
+				TransportationTypeHandle theTransportation) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void reportInteractionTransportationType(FederateHandle theFederate,
+				InteractionClassHandle theInteraction, TransportationTypeHandle theTransportation)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void requestAttributeOwnershipAssumption(ObjectInstanceHandle theObject,
+				AttributeHandleSet offeredAttributes, byte[] userSuppliedTag) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void requestDivestitureConfirmation(ObjectInstanceHandle theObject, AttributeHandleSet offeredAttributes)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void attributeOwnershipAcquisitionNotification(ObjectInstanceHandle theObject,
+				AttributeHandleSet securedAttributes, byte[] userSuppliedTag) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void attributeOwnershipUnavailable(ObjectInstanceHandle theObject, AttributeHandleSet theAttributes)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void requestAttributeOwnershipRelease(ObjectInstanceHandle theObject,
+				AttributeHandleSet candidateAttributes, byte[] userSuppliedTag) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void confirmAttributeOwnershipAcquisitionCancellation(ObjectInstanceHandle theObject,
+				AttributeHandleSet theAttributes) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void informAttributeOwnership(ObjectInstanceHandle theObject, AttributeHandle theAttribute,
+				FederateHandle theOwner) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void attributeIsNotOwned(ObjectInstanceHandle theObject, AttributeHandle theAttribute)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void attributeIsOwnedByRTI(ObjectInstanceHandle theObject, AttributeHandle theAttribute)
+				throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void timeRegulationEnabled(LogicalTime time) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void timeConstrainedEnabled(LogicalTime time) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void timeAdvanceGrant(LogicalTime theTime) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void requestRetraction(MessageRetractionHandle theHandle) throws FederateInternalError {
+			// TODO Auto-generated method stub
+			
+		}
+        // Implement methods of the FederateAmbassador interface
+        // You can provide empty implementations for methods you don't need
+    }
+	
+	TestFederate(String[] var1) {
+		new ArrayList<String>(List.of(var1));
+		this._systemInput = new BufferedReader(new InputStreamReader(System.in));
+	}
+
+	void tryRun() {
+		try {
+			this.run();
+		} catch (RuntimeException var2) {
+			System.err.println("Unexpected exception: " + var2);
+			var2.printStackTrace();
+			this.pressEnterToShutDown();
+		} catch (Exception var3) {
+			System.err.println("" + var3);
+			this.pressEnterToShutDown();
+		}
+
+	}
+
+	private void pressEnterToShutDown() {
+		try {
+			System.out.println("Press <ENTER> to shutdown");
+			this._systemInput.readLine();
+		} catch (IOException var2) {
+		}
+
+	}
+
+	private void run() throws Exception {
+		RtiFactory var1;
+		var1 = RtiFactoryFactory.getRtiFactory();
+		try {
+			this._rtiAmbassador = var1.getRtiAmbassador();
+			this._encoderFactory = var1.getEncoderFactory();
+		} catch (Exception var19) {
+			throw new Exception("Unable to create RTI ambassador: " + var19);
+		}
+
+		RtiConfiguration config = RtiConfiguration.createConfiguration().withConfigurationName("TestFederate")
+				.withRtiAddress("localhost:8989");
+
+		this._rtiAmbassador.connect(this, CallbackModel.HLA_IMMEDIATE, config.toString());
+
+		File var5 = new File("foms/TestFederate.xml");
+
+		try {
+			this._rtiAmbassador.createFederationExecution("SEE 2024", new URL[] { var5.toURI().toURL() },
+					"HLAfloat64Time");
+			System.out.println("Federation execution created successfully.");
+		} catch (FederationExecutionAlreadyExists var15) {
+			System.out.println("Federation exist already. Joining " + this.FEDERATION_NAME);
+		}
+		
+
+		this._rtiAmbassador.joinFederationExecution("TestFederate", "SEE 2024", new URL[] { var5.toURI().toURL() });
+		this._communicationClassHandle = this._rtiAmbassador.getInteractionClassHandle("Communication");
+		this._messageParameterHandle = this._rtiAmbassador.getParameterHandle(this._communicationClassHandle,
+				"Message");
+		this._senderParameterHandle = this._rtiAmbassador.getParameterHandle(this._communicationClassHandle, "Sender");
+		this._rtiAmbassador.subscribeInteractionClass(this._communicationClassHandle);
+		this._rtiAmbassador.publishInteractionClass(this._communicationClassHandle);
+
+		ObjectClassHandle var6 = this._rtiAmbassador.getObjectClassHandle("Participant");
+		this._nameAttributeHandle = this._rtiAmbassador.getAttributeHandle(var6, "Name");
+		AttributeHandleSet var7 = this._rtiAmbassador.getAttributeHandleSetFactory().create();
+		var7.add(this._nameAttributeHandle);
+		this._rtiAmbassador.subscribeObjectClassAttributes(var6, var7);
+		this._rtiAmbassador.publishObjectClassAttributes(var6, var7);
+
+		do {
+			this._username = this.federateName;
+			try {
+				this._reservationComplete = false;
+				this._rtiAmbassador.reserveObjectInstanceName(this._username);
+				synchronized (this._reservationSemaphore) {
+					while (!this._reservationComplete) {
+						try {
+							this._reservationSemaphore.wait();
+						} catch (InterruptedException var14) {
+						}
+					}
+				}
+
+				if (!this._reservationSucceeded) {
+					System.out.println("Federate already taken, try again.");
+				}
+			} catch (IllegalName var21) {
+				System.out.println("Illegal name. Try again.");
+			} catch (RTIexception var22) {
+				System.err.println("RTI exception when reserving name: " + var22.getMessage());
+				return;
+			}
+		} while (!this._reservationSucceeded);
+
+		this._userInstanceHandle = this._rtiAmbassador.registerObjectInstance(var6, this._username);
+		AttributeHandleValueMap var8 = this._rtiAmbassador.getAttributeHandleValueMapFactory().create(1);
+		HLAunicodeString var9 = this._encoderFactory.createHLAunicodeString(this._username);
+		var8.put(this._nameAttributeHandle, var9.toByteArray());
+		this._rtiAmbassador.updateAttributeValues(this._userInstanceHandle, var8, (byte[]) null);
+		System.out.println("Type messages you want to send. To exit, type . <ENTER>");
+
+		while (true) {
+			System.out.print("> ");
+			String var10 = this._systemInput.readLine();
+			if (var10.equals(".")) {
+				this._rtiAmbassador.resignFederationExecution(ResignAction.DELETE_OBJECTS_THEN_DIVEST);
+
+				try {
+					this._rtiAmbassador.destroyFederationExecution("SEE 2024");
+				} catch (FederatesCurrentlyJoined var13) {
+				}
+
+				this._rtiAmbassador.disconnect();
+				this._rtiAmbassador = null;
+				return;
+			}
+
+			ParameterHandleValueMap var11 = this._rtiAmbassador.getParameterHandleValueMapFactory().create(1);
+			HLAunicodeString var12 = this._encoderFactory.createHLAunicodeString();
+			var12.setValue(var10);
+			var11.put(this._messageParameterHandle, var12.toByteArray());
+			var11.put(this._senderParameterHandle, var9.toByteArray());
+			this._rtiAmbassador.sendInteraction(this._communicationClassHandle, var11, (byte[]) null);
+		}
+	}
+	
+	@Override
+	public void receiveInteraction(InteractionClassHandle var1, ParameterHandleValueMap var2, byte[] var3,
+			OrderType var4, TransportationTypeHandle var5, FederateAmbassador.SupplementalReceiveInfo var6) {
+		if (var1.equals(this._communicationClassHandle)) {
+			if (!var2.containsKey(this._messageParameterHandle)) {
+				System.err.println("Bad message received: No text.");
+				return;
+			}
+
+			if (!var2.containsKey(this._senderParameterHandle)) {
+				System.err.println("Bad message received: No sender.");
+				return;
+			}
+
+			try {
+				HLAunicodeString var7 = this._encoderFactory.createHLAunicodeString();
+				HLAunicodeString var8 = this._encoderFactory.createHLAunicodeString();
+				var7.decode((byte[]) var2.get(this._messageParameterHandle));
+				var8.decode((byte[]) var2.get(this._senderParameterHandle));
+				String var9 = var7.getValue();
+				String var10 = var8.getValue();
+				System.out.println(var10 + ": " + var9);
+				System.out.print("> ");
+			} catch (DecoderException var11) {
+				System.err.println("Failed to decode incoming interaction");
+			}
+		}
+
+	}
+
+	public final void objectInstanceNameReservationSucceeded(String var1) {
+		synchronized (this._reservationSemaphore) {
+			this._reservationComplete = true;
+			this._reservationSucceeded = true;
+			this._reservationSemaphore.notifyAll();
+		}
+	}
+
+	public final void objectInstanceNameReservationFailed(String var1) {
+		synchronized (this._reservationSemaphore) {
+			this._reservationComplete = true;
+			this._reservationSucceeded = false;
+			this._reservationSemaphore.notifyAll();
+		}
+	}
+
+	public void removeObjectInstance(ObjectInstanceHandle var1, byte[] var2, OrderType var3, FederateHandle var4) {
+		Participant var5 = (Participant) this._knownObjects.remove(var1);
+		if (var5 != null) {
+			System.out.println("[" + var5 + " has left]");
+		}
+
+	}
+
+	@Override
+	public void reflectAttributeValues(ObjectInstanceHandle var1, AttributeHandleValueMap var2, byte[] var3,
+			OrderType var4, TransportationTypeHandle var5, FederateAmbassador.SupplementalReflectInfo var6) {
+		if (!this._knownObjects.containsKey(var1) && var2.containsKey(this._nameAttributeHandle)) {
+			try {
+				HLAunicodeString var7 = this._encoderFactory.createHLAunicodeString();
+				var7.decode((byte[]) var2.get(this._nameAttributeHandle));
+				String var8 = var7.getValue();
+				Participant var9 = new Participant(var8);
+				System.out.println("[" + var9 + " has joined]");
+				System.out.print("> ");
+				this._knownObjects.put(var1, var9);
+			} catch (DecoderException var10) {
+				System.err.println("Failed to decode incoming attribute");
+			}
+		}
+
+	}
+
+	public final void provideAttributeValueUpdate(ObjectInstanceHandle var1, AttributeHandleSet var2, byte[] var3) {
+		if (var1.equals(this._userInstanceHandle) && var2.contains(this._nameAttributeHandle)) {
+			try {
+				AttributeHandleValueMap var4 = this._rtiAmbassador.getAttributeHandleValueMapFactory().create(1);
+				HLAunicodeString var5 = this._encoderFactory.createHLAunicodeString(this._username);
+				var4.put(this._nameAttributeHandle, var5.toByteArray());
+				this._rtiAmbassador.updateAttributeValues(this._userInstanceHandle, var4, (byte[]) null);
+			} catch (RTIexception var6) {
+			}
+		}
+
+	}
+
+	private static class Participant {
+		private final String _name;
+
+		Participant(String var1) {
+			this._name = var1;
+		}
+
+		public String toString() {
+			return this._name;
+		}
+	}
+
+	@Override
+	public void connectionLost(String faultDescription) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void reportFederationExecutions(FederationExecutionInformationSet theFederationExecutionInformationSet)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void synchronizationPointRegistrationSucceeded(String synchronizationPointLabel)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void synchronizationPointRegistrationFailed(String synchronizationPointLabel,
+			SynchronizationPointFailureReason reason) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void announceSynchronizationPoint(String synchronizationPointLabel, byte[] userSuppliedTag)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void federationSynchronized(String synchronizationPointLabel, FederateHandleSet failedToSyncSet)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void initiateFederateSave(String label) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void initiateFederateSave(String label, LogicalTime time) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void federationSaved() throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void federationNotSaved(SaveFailureReason reason) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void federationSaveStatusResponse(FederateHandleSaveStatusPair[] response) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void requestFederationRestoreSucceeded(String label) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void requestFederationRestoreFailed(String label) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void federationRestoreBegun() throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void initiateFederateRestore(String label, String federateName, FederateHandle federateHandle)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void federationRestored() throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void federationNotRestored(RestoreFailureReason reason) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void federationRestoreStatusResponse(FederateRestoreStatus[] response) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void startRegistrationForObjectClass(ObjectClassHandle theClass) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void stopRegistrationForObjectClass(ObjectClassHandle theClass) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void turnInteractionsOn(InteractionClassHandle theHandle) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void turnInteractionsOff(InteractionClassHandle theHandle) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void multipleObjectInstanceNameReservationSucceeded(Set<String> objectNames) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void multipleObjectInstanceNameReservationFailed(Set<String> objectNames) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void discoverObjectInstance(ObjectInstanceHandle theObject, ObjectClassHandle theObjectClass,
+			String objectName) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void discoverObjectInstance(ObjectInstanceHandle theObject, ObjectClassHandle theObjectClass,
+			String objectName, FederateHandle producingFederate) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void reflectAttributeValues(ObjectInstanceHandle theObject, AttributeHandleValueMap theAttributes,
+			byte[] userSuppliedTag, OrderType sentOrdering, TransportationTypeHandle theTransport, LogicalTime theTime,
+			OrderType receivedOrdering, SupplementalReflectInfo reflectInfo) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void reflectAttributeValues(ObjectInstanceHandle theObject, AttributeHandleValueMap theAttributes,
+			byte[] userSuppliedTag, OrderType sentOrdering, TransportationTypeHandle theTransport, LogicalTime theTime,
+			OrderType receivedOrdering, MessageRetractionHandle retractionHandle, SupplementalReflectInfo reflectInfo)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void receiveInteraction(InteractionClassHandle interactionClass, ParameterHandleValueMap theParameters,
+			byte[] userSuppliedTag, OrderType sentOrdering, TransportationTypeHandle theTransport, LogicalTime theTime,
+			OrderType receivedOrdering, SupplementalReceiveInfo receiveInfo) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void receiveInteraction(InteractionClassHandle interactionClass, ParameterHandleValueMap theParameters,
+			byte[] userSuppliedTag, OrderType sentOrdering, TransportationTypeHandle theTransport, LogicalTime theTime,
+			OrderType receivedOrdering, MessageRetractionHandle retractionHandle, SupplementalReceiveInfo receiveInfo)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeObjectInstance(ObjectInstanceHandle theObject, byte[] userSuppliedTag, OrderType sentOrdering,
+			SupplementalRemoveInfo removeInfo) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeObjectInstance(ObjectInstanceHandle theObject, byte[] userSuppliedTag, OrderType sentOrdering,
+			LogicalTime theTime, OrderType receivedOrdering, SupplementalRemoveInfo removeInfo)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeObjectInstance(ObjectInstanceHandle theObject, byte[] userSuppliedTag, OrderType sentOrdering,
+			LogicalTime theTime, OrderType receivedOrdering, MessageRetractionHandle retractionHandle,
+			SupplementalRemoveInfo removeInfo) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void attributesInScope(ObjectInstanceHandle theObject, AttributeHandleSet theAttributes)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void attributesOutOfScope(ObjectInstanceHandle theObject, AttributeHandleSet theAttributes)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void turnUpdatesOnForObjectInstance(ObjectInstanceHandle theObject, AttributeHandleSet theAttributes)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void turnUpdatesOnForObjectInstance(ObjectInstanceHandle theObject, AttributeHandleSet theAttributes,
+			String updateRateDesignator) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void turnUpdatesOffForObjectInstance(ObjectInstanceHandle theObject, AttributeHandleSet theAttributes)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void confirmAttributeTransportationTypeChange(ObjectInstanceHandle theObject,
+			AttributeHandleSet theAttributes, TransportationTypeHandle theTransportation) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void reportAttributeTransportationType(ObjectInstanceHandle theObject, AttributeHandle theAttribute,
+			TransportationTypeHandle theTransportation) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void confirmInteractionTransportationTypeChange(InteractionClassHandle theInteraction,
+			TransportationTypeHandle theTransportation) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void reportInteractionTransportationType(FederateHandle theFederate, InteractionClassHandle theInteraction,
+			TransportationTypeHandle theTransportation) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void requestAttributeOwnershipAssumption(ObjectInstanceHandle theObject,
+			AttributeHandleSet offeredAttributes, byte[] userSuppliedTag) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void requestDivestitureConfirmation(ObjectInstanceHandle theObject, AttributeHandleSet offeredAttributes)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void attributeOwnershipAcquisitionNotification(ObjectInstanceHandle theObject,
+			AttributeHandleSet securedAttributes, byte[] userSuppliedTag) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void attributeOwnershipUnavailable(ObjectInstanceHandle theObject, AttributeHandleSet theAttributes)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void requestAttributeOwnershipRelease(ObjectInstanceHandle theObject, AttributeHandleSet candidateAttributes,
+			byte[] userSuppliedTag) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void confirmAttributeOwnershipAcquisitionCancellation(ObjectInstanceHandle theObject,
+			AttributeHandleSet theAttributes) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void informAttributeOwnership(ObjectInstanceHandle theObject, AttributeHandle theAttribute,
+			FederateHandle theOwner) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void attributeIsNotOwned(ObjectInstanceHandle theObject, AttributeHandle theAttribute)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void attributeIsOwnedByRTI(ObjectInstanceHandle theObject, AttributeHandle theAttribute)
+			throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void timeRegulationEnabled(LogicalTime time) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void timeConstrainedEnabled(LogicalTime time) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void timeAdvanceGrant(LogicalTime theTime) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void requestRetraction(MessageRetractionHandle theHandle) throws FederateInternalError {
+		// TODO Auto-generated method stub
+		
+	}
+}

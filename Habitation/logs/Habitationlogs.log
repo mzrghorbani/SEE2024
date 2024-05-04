@@ -1,0 +1,20 @@
+2024-05-01 16:28:00.359 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-05-01 16:28:00.389 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-05-01 16:28:00.579 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-05-01 16:28:00.653 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-05-01 16:28:01.442 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-05-01 16:28:01.444 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Brunel Habitation ' into the Federation execution ' SEE 2024 '.
+2024-05-01 16:28:02.371 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-05-01 16:28:02.372 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-05-01 16:28:02.432 [prti1516e: LRC[0x2c532cd8] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-05-01 16:28:02.459 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-05-01 16:28:02.472 [prti1516e: LRC[0x2c532cd8] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<102>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-05-01 16:28:02.637 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-05-01 17:03:09.159 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-05-01 17:03:09.173 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-05-01 17:03:09.304 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-05-01 17:03:09.352 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-05-01 17:03:10.056 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-05-01 17:03:10.057 [main] INFO  skf.core.SEEHLAModule - Join the federate ' Brunel Habitation ' into the Federation execution ' SEE 2024 '.
+2024-05-01 17:03:10.513 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-05-01 17:03:10.513 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject

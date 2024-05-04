@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;EarthEnvironment/fom&apos; to &apos;foms&apos;" description="Rename resource &apos;fom&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="fom" name="foms" stamp="1708384492946" updateReferences="true"/>
+</session>

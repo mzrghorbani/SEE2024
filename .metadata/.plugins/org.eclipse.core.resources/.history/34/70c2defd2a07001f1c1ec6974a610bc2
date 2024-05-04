@@ -1,0 +1,76 @@
+package model;
+
+import org.siso.spacefom.frame.SpaceTimeCoordinateState;
+
+import skf.coder.HLAunicodeStringCoder;
+import skf.model.object.annotations.Attribute;
+import skf.model.object.annotations.ObjectClass;
+
+@ObjectClass(name = "PhysicalEntity.Habitation")
+public class Habitation {
+	
+	@Attribute(name = "name", coder = HLAunicodeStringCoder.class)
+	private String name = null;
+	
+	@Attribute(name = "parent_reference_frame", coder = HLAunicodeStringCoder.class)
+	private String parent_name = null;
+	
+	@Attribute(name = "state", coder = HLAunicodeStringCoder.class)
+	private SpaceTimeCoordinateState state = null;
+	
+	@Attribute(name = "type", coder = HLAunicodeStringCoder.class)
+	private String type = null;
+	
+	public Habitation(){}
+
+	public Habitation(String name, String parent_name, String typr, Position position) {
+		this.name = name;
+		this.parent_name = parent_name;
+		this.type = type;
+		this.state = new SpaceTimeCoordinateState();
+		this.setPosition(position);
+	}
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/**
+	 * @return the parent_name
+	 */
+	public String getParent_name() {
+		return parent_name;
+	}
+
+	/**
+	 * @param parent_name the parent_name to set
+	 */
+	public void setParent_name(String parent_name) {
+		this.parent_name = parent_name;
+	}
+
+	/**
+	 * @return the position
+	 */
+	public Position getPosition() {
+		return position;
+	}
+
+	/**
+	 * @param position the position to set
+	 */
+	public void setPosition(Position position) {
+		this.position = position;
+	}
+
+}

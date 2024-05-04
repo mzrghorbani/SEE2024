@@ -1,0 +1,8 @@
+2024-04-08 19:50:47.771 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-08 19:50:47.963 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-08 19:50:48.199 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-08 19:50:48.256 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-08 19:53:45.002 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-08 19:53:45.141 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-08 19:53:45.321 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-08 19:53:45.368 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010

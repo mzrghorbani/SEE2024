@@ -1,0 +1,19 @@
+
+import hla.rti1516e.*;
+
+public abstract class AbstractFederateAmbassador implements FederateAmbassador {
+    // Provide default implementations for all methods
+	
+    @Override
+    public void receiveInteraction(InteractionClassHandle interactionClass,
+                                   ParameterHandleValueMap theParameters,
+                                   byte[] userSuppliedTag,
+                                   OrderType sentOrdering,
+                                   TransportationTypeHandle transportation,
+                                   FederateAmbassador.SupplementalReceiveInfo info) {
+        // Default implementation
+    }
+
+    // Implement default methods for other callback methods as needed
+}
+

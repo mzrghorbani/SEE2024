@@ -1,0 +1,30 @@
+import java.io.File;
+import core.LunarRoverFederate;
+import core.LunarRoverFederateAmbassador;
+import skf.config.ConfigurationFactory;
+import model.LunarRover;
+import model.Position;
+import model.Quaternion;
+
+
+public class LunarRoverMain {
+	
+	private static final File conf = new File("config/conf.json");
+	
+	public static void main(String[] args) throws Exception {
+		
+		LunarRover lunarRover = new LunarRover(
+				"LunarRover", 
+				"LunarRover", 
+				"AitkenBasinLocalFixed", 
+				new Position(-817582.939286128, -296194.936333636, -1500000.52696795),
+				new Quaternion(0, 0, 0, 1));
+		
+		LunarRoverFederateAmbassador ambassador = new LunarRoverFederateAmbassador();
+		LunarRoverFederate federate = new LunarRoverFederate(ambassador, lunarRover);
+		
+		// start execution
+		federate.configureAndStart(new ConfigurationFactory().importConfiguration(conf));
+	}
+
+}

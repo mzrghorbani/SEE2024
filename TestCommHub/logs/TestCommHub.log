@@ -1,0 +1,191 @@
+2024-04-18 22:02:08.276 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 22:02:08.298 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 22:02:08.472 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 22:02:08.539 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 22:02:09.388 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 22:02:09.389 [main] INFO  skf.core.SEEHLAModule - Join the federate ' TestCommHub ' into the Federation execution ' SEE 2024 '.
+2024-04-18 22:02:10.268 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-18 22:02:10.269 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-18 22:02:10.395 [prti1516e: LRC[0x31000e60] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-18 22:02:10.411 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-18 22:02:10.420 [prti1516e: LRC[0x31000e60] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<2117>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-18 22:02:10.582 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-18 22:02:10.594 [main] INFO  skf.core.SEEHLAModule - The Object ' model.TestCommHub@7a26928a ' has been published.
+2024-04-18 22:02:10.594 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' AitkenBasinLocalFixed ' ReferenceFrame
+2024-04-18 22:02:10.607 [main] INFO  skf.core.SEEHLAModule - Set up time management.
+2024-04-18 22:02:10.607 [main] INFO  skf.core.SEEHLAModule - Time constrained enabled.
+2024-04-18 22:02:10.609 [prti1516e: LRC[0x31000e60] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3127>, ObjectClassHandle: objectClass<8>, Name: MarsCentricFixed, FederateHandle: null
+2024-04-18 22:02:10.621 [prti1516e: LRC[0x31000e60] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3123>, ObjectClassHandle: objectClass<8>, Name: MoonCentricInertial, FederateHandle: null
+2024-04-18 22:02:10.622 [prti1516e: LRC[0x31000e60] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3118>, ObjectClassHandle: objectClass<8>, Name: SunCentricInertial, FederateHandle: null
+2024-04-18 22:02:10.622 [prti1516e: LRC[0x31000e60] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3125>, ObjectClassHandle: objectClass<8>, Name: EarthMoonL2Rotating, FederateHandle: null
+2024-04-18 22:02:10.622 [prti1516e: LRC[0x31000e60] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3120>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricRotating, FederateHandle: null
+2024-04-18 22:02:10.622 [prti1516e: LRC[0x31000e60] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3122>, ObjectClassHandle: objectClass<8>, Name: EarthCentricFixed, FederateHandle: null
+2024-04-18 22:02:10.622 [prti1516e: LRC[0x31000e60] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3129>, ObjectClassHandle: objectClass<8>, Name: SeeLunarSouthPoleBaseLocalFixed, FederateHandle: null
+2024-04-18 22:02:10.622 [prti1516e: LRC[0x31000e60] Federate service] ERROR skf.core.SEEAbstractFederateAmbassador - Can't find the FrameType: SeeLunarSouthPoleBaseLocalFixed
+2024-04-18 22:02:10.622 [prti1516e: LRC[0x31000e60] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3121>, ObjectClassHandle: objectClass<8>, Name: EarthCentricInertial, FederateHandle: null
+2024-04-18 22:02:10.622 [prti1516e: LRC[0x31000e60] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3128>, ObjectClassHandle: objectClass<8>, Name: AitkenBasinLocalFixed, FederateHandle: null
+2024-04-18 22:02:10.622 [prti1516e: LRC[0x31000e60] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3124>, ObjectClassHandle: objectClass<8>, Name: MoonCentricFixed, FederateHandle: null
+2024-04-18 22:02:10.623 [prti1516e: LRC[0x31000e60] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3119>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricInertial, FederateHandle: null
+2024-04-18 22:02:10.623 [prti1516e: LRC[0x31000e60] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3117>, ObjectClassHandle: objectClass<8>, Name: SolarSystemBarycentricInertial, FederateHandle: null
+2024-04-18 22:02:10.623 [prti1516e: LRC[0x31000e60] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3126>, ObjectClassHandle: objectClass<8>, Name: MarsCentricInertial, FederateHandle: null
+2024-04-18 22:02:11.219 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:02:11.911 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:02:12.927 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:02:13.916 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:02:14.932 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:02:15.929 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:02:16.924 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:02:17.917 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:02:18.928 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:02:19.938 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:02:20.928 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:02:21.913 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:02:22.933 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:02:23.941 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:02:24.936 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:02:25.918 [Thread-3] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@7a26928a' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:42.579 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 22:08:42.597 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 22:08:42.741 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 22:08:42.789 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 22:08:43.652 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 22:08:43.654 [main] INFO  skf.core.SEEHLAModule - Join the federate ' TestCommHub ' into the Federation execution ' SEE 2024 '.
+2024-04-18 22:08:44.498 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-18 22:08:44.499 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-18 22:08:44.645 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-18 22:08:44.676 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-18 22:08:44.686 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<2117>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-18 22:08:44.843 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-18 22:08:44.849 [main] INFO  skf.core.SEEHLAModule - The Object ' model.TestCommHub@2f6bcf87 ' has been published.
+2024-04-18 22:08:44.849 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' AitkenBasinLocalFixed ' ReferenceFrame
+2024-04-18 22:08:44.860 [main] INFO  skf.core.SEEHLAModule - Set up time management.
+2024-04-18 22:08:44.860 [main] INFO  skf.core.SEEHLAModule - Time constrained enabled.
+2024-04-18 22:08:44.873 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3127>, ObjectClassHandle: objectClass<8>, Name: MarsCentricFixed, FederateHandle: null
+2024-04-18 22:08:44.879 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3123>, ObjectClassHandle: objectClass<8>, Name: MoonCentricInertial, FederateHandle: null
+2024-04-18 22:08:44.880 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3118>, ObjectClassHandle: objectClass<8>, Name: SunCentricInertial, FederateHandle: null
+2024-04-18 22:08:44.880 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3125>, ObjectClassHandle: objectClass<8>, Name: EarthMoonL2Rotating, FederateHandle: null
+2024-04-18 22:08:44.880 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3120>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricRotating, FederateHandle: null
+2024-04-18 22:08:44.880 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3122>, ObjectClassHandle: objectClass<8>, Name: EarthCentricFixed, FederateHandle: null
+2024-04-18 22:08:44.880 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3129>, ObjectClassHandle: objectClass<8>, Name: SeeLunarSouthPoleBaseLocalFixed, FederateHandle: null
+2024-04-18 22:08:44.880 [prti1516e: LRC[0x018920cc] Federate service] ERROR skf.core.SEEAbstractFederateAmbassador - Can't find the FrameType: SeeLunarSouthPoleBaseLocalFixed
+2024-04-18 22:08:44.880 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3121>, ObjectClassHandle: objectClass<8>, Name: EarthCentricInertial, FederateHandle: null
+2024-04-18 22:08:44.881 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3128>, ObjectClassHandle: objectClass<8>, Name: AitkenBasinLocalFixed, FederateHandle: null
+2024-04-18 22:08:44.881 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3124>, ObjectClassHandle: objectClass<8>, Name: MoonCentricFixed, FederateHandle: null
+2024-04-18 22:08:44.881 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3119>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricInertial, FederateHandle: null
+2024-04-18 22:08:44.881 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3117>, ObjectClassHandle: objectClass<8>, Name: SolarSystemBarycentricInertial, FederateHandle: null
+2024-04-18 22:08:44.881 [prti1516e: LRC[0x018920cc] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3126>, ObjectClassHandle: objectClass<8>, Name: MarsCentricInertial, FederateHandle: null
+2024-04-18 22:08:45.182 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:45.918 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:46.917 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:47.913 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:48.911 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:49.918 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:50.927 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:51.924 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:52.922 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:53.918 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:54.934 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:55.915 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:56.917 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:57.912 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:58.910 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:08:59.942 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:00.909 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:01.924 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:02.923 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:03.925 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:04.911 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:05.923 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:06.920 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:07.921 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:08.907 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:09.910 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:10.922 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:11.922 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:12.921 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:13.911 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:14.926 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:15.923 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@2f6bcf87' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:40.437 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2024-04-18 22:09:40.449 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2024-04-18 22:09:40.570 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2024-04-18 22:09:40.615 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.5.9, hlaVersion: HLA IEEE 1516-2010
+2024-04-18 22:09:41.359 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2024-04-18 22:09:41.360 [main] INFO  skf.core.SEEHLAModule - Join the federate ' TestCommHub ' into the Federation execution ' SEE 2024 '.
+2024-04-18 22:09:42.109 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2024-04-18 22:09:42.109 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2024-04-18 22:09:42.207 [prti1516e: LRC[0x6b3e12b5] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2024-04-18 22:09:42.226 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2024-04-18 22:09:42.242 [prti1516e: LRC[0x6b3e12b5] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<2117>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null
+2024-04-18 22:09:42.401 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2024-04-18 22:09:42.408 [main] INFO  skf.core.SEEHLAModule - The Object ' model.TestCommHub@61f2c3f0 ' has been published.
+2024-04-18 22:09:42.409 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' AitkenBasinLocalFixed ' ReferenceFrame
+2024-04-18 22:09:42.418 [main] INFO  skf.core.SEEHLAModule - Set up time management.
+2024-04-18 22:09:42.418 [main] INFO  skf.core.SEEHLAModule - Time constrained enabled.
+2024-04-18 22:09:42.430 [prti1516e: LRC[0x6b3e12b5] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3127>, ObjectClassHandle: objectClass<8>, Name: MarsCentricFixed, FederateHandle: null
+2024-04-18 22:09:42.436 [prti1516e: LRC[0x6b3e12b5] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3123>, ObjectClassHandle: objectClass<8>, Name: MoonCentricInertial, FederateHandle: null
+2024-04-18 22:09:42.436 [prti1516e: LRC[0x6b3e12b5] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3118>, ObjectClassHandle: objectClass<8>, Name: SunCentricInertial, FederateHandle: null
+2024-04-18 22:09:42.436 [prti1516e: LRC[0x6b3e12b5] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3125>, ObjectClassHandle: objectClass<8>, Name: EarthMoonL2Rotating, FederateHandle: null
+2024-04-18 22:09:42.437 [prti1516e: LRC[0x6b3e12b5] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3120>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricRotating, FederateHandle: null
+2024-04-18 22:09:42.437 [prti1516e: LRC[0x6b3e12b5] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3122>, ObjectClassHandle: objectClass<8>, Name: EarthCentricFixed, FederateHandle: null
+2024-04-18 22:09:42.437 [prti1516e: LRC[0x6b3e12b5] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3129>, ObjectClassHandle: objectClass<8>, Name: SeeLunarSouthPoleBaseLocalFixed, FederateHandle: null
+2024-04-18 22:09:42.437 [prti1516e: LRC[0x6b3e12b5] Federate service] ERROR skf.core.SEEAbstractFederateAmbassador - Can't find the FrameType: SeeLunarSouthPoleBaseLocalFixed
+2024-04-18 22:09:42.437 [prti1516e: LRC[0x6b3e12b5] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3121>, ObjectClassHandle: objectClass<8>, Name: EarthCentricInertial, FederateHandle: null
+2024-04-18 22:09:42.437 [prti1516e: LRC[0x6b3e12b5] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3128>, ObjectClassHandle: objectClass<8>, Name: AitkenBasinLocalFixed, FederateHandle: null
+2024-04-18 22:09:42.437 [prti1516e: LRC[0x6b3e12b5] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3124>, ObjectClassHandle: objectClass<8>, Name: MoonCentricFixed, FederateHandle: null
+2024-04-18 22:09:42.437 [prti1516e: LRC[0x6b3e12b5] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3119>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricInertial, FederateHandle: null
+2024-04-18 22:09:42.437 [prti1516e: LRC[0x6b3e12b5] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3117>, ObjectClassHandle: objectClass<8>, Name: SolarSystemBarycentricInertial, FederateHandle: null
+2024-04-18 22:09:42.438 [prti1516e: LRC[0x6b3e12b5] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<3126>, ObjectClassHandle: objectClass<8>, Name: MarsCentricInertial, FederateHandle: null
+2024-04-18 22:09:43.177 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:43.925 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:44.913 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:45.925 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:46.921 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:47.917 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:48.932 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:49.916 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:50.926 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:51.924 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:52.923 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:53.923 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:54.914 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:55.911 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:56.910 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:57.923 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:58.923 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:09:59.919 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:00.918 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:01.917 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:02.918 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:03.918 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:04.914 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:05.914 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:06.918 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:07.917 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:08.914 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:09.911 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:10.922 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:11.920 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:12.922 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:13.924 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:14.923 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:15.921 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:16.912 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:17.911 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:18.924 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:19.921 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:20.918 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:21.931 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:22.910 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:23.922 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:24.919 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:25.917 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:26.912 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:27.923 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:28.920 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:29.914 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:30.912 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:31.924 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:32.939 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:33.920 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
+2024-04-18 22:10:34.916 [Thread-1] INFO  skf.core.SEEHLAModule - The Object 'model.TestCommHub@61f2c3f0' has been updated on the HLA/RTI platform.
